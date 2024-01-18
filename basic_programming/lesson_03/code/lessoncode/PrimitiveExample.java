@@ -11,5 +11,6 @@ public class PrimitiveExample {
 
         System.out.println(""+char1 +char2 +char2 +char1);
 
+
 }
 }
