@@ -18,6 +18,8 @@ public class Hw2_3 {
         System.out.println("Вторая цифра нашего числа = " + d2);
         System.out.println("Третья цифра нашего числа = " + d3);
 
+        System.out.println("" + d1 + d2 + d3);
+
 
         d1 = number / 100;
 
