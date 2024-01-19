@@ -24,6 +24,8 @@ public class DogDemo {
 
         dog2 = new Dog();
 
+        Dog dog3 = new Dog();
+
         System.out.println(dog2.age);
         System.out.println(dog2.weight);
     }
