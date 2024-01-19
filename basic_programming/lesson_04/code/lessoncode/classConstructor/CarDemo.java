@@ -5,6 +5,8 @@ public class CarDemo {
     public static void main(String[] args) {
         Car myFirstCar = new Car();
 
+        myFirstCar.printCarData();
+
         myFirstCar.producer = "Mercedes";
         myFirstCar.model = "GLC 250";
         myFirstCar.maxSpeed = 280;
@@ -18,6 +20,9 @@ public class CarDemo {
         mySecondCar.maxSpeed = 320;
 
         mySecondCar.printCarData();
+
+        Car myCarWithConstructor = new Car("Volvo", "S80", 260);
+        myCarWithConstructor.printCarData();
 
     }
 

@@ -8,6 +8,15 @@ public class Car {
 
     int maxSpeed;
 
+    public Car() {
+    }
+
+    public Car(String p, String m, int maxS) {
+        model = m;
+        producer = p;
+        maxSpeed = maxS;
+    }
+
     public void printCarData(){
         System.out.println("Характеристики автомобиля:");
         System.out.println("Производитель: " + producer);

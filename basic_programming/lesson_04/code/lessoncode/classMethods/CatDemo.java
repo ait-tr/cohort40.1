@@ -6,7 +6,7 @@ public class CatDemo {
 
         myCat.age = 5;
         myCat.catMeow();
-        myCat.catBirthday();
+        myCat.catBirthday("ДЕНЬ РОЖДЕНИЯ МОЕЙ КОШКИ!");
 
         System.out.println(myCat.age);
 
@@ -18,6 +18,6 @@ public class CatDemo {
         mySecondCat.age = mySecondCat.age + 1;
         System.out.println("а теперь ей " + mySecondCat.age);
 
-        mySecondCat.catBirthday();
+        mySecondCat.catBirthday("ДЕНЬ РОЖДЕНИЯ ВТОРОЙ КОШКИ");
     }
 }

@@ -7,7 +7,8 @@ public class Cat {
         System.out.println("Meow!!!");
     }
 
-    public void catBirthday(){
+    public void catBirthday(String textMessage){
+        System.out.println(textMessage);
         System.out.println("У моей кошки сегодня день рождения!");
         System.out.println("Ей было " + age + " лет");
         age = age + 1;
