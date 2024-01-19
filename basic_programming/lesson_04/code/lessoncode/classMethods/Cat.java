@@ -1,4 +1,4 @@
-package classConstructor;
+package classMethods;
 
 public class Cat {
     int age;

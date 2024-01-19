@@ -1,4 +1,4 @@
-package classConstructor;
+package classMethods;
 
 public class CatDemo {
     public static void main(String[] args) {
