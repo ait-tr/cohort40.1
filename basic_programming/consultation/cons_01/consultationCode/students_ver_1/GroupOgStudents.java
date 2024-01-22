@@ -1,4 +1,4 @@
-package students;
+package students_ver_1;
 
 public class GroupOgStudents {
     public static void main(String[] args) {
