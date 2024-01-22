@@ -11,7 +11,6 @@ public class PhoneDemo {
 
         System.out.println(myPhone);
 
-
         Phone mySecondPhone = new Phone("Samsung Galaxy");
 
         System.out.println(mySecondPhone);
