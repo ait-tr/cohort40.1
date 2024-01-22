@@ -2,11 +2,11 @@ package students;
 
 public class GroupOgStudents {
     public static void main(String[] args) {
-        cons_01.consultationCode.students.Student student1 = new cons_01.consultationCode.students.Student("Petrova", "Olga", 4.5);
-        cons_01.consultationCode.students.Student student2 = new cons_01.consultationCode.students.Student("Smith", "John", 4.2);
-        cons_01.consultationCode.students.Student student3 = new cons_01.consultationCode.students.Student("Koval", "Ruslan", 4.7);
-        cons_01.consultationCode.students.Student student4 = new cons_01.consultationCode.students.Student("Smith", "Tatiana", 4.9);
-        cons_01.consultationCode.students.Student student5 = new cons_01.consultationCode.students.Student("Rubenshtain", "Serge", 4.4);
+        Student student1 = new Student("Petrova", "Olga", 4.5);
+        Student student2 = new Student("Smith", "John", 4.2);
+        Student student3 = new Student("Koval", "Ruslan", 4.7);
+        Student student4 = new Student("Smith", "Tatiana", 4.9);
+        Student student5 = new Student("Rubenshtain", "Serge", 4.4);
 
         System.out.println(student1);
         System.out.println(student2);
