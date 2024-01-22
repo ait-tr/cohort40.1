@@ -5,7 +5,7 @@ public class ChristmasTreeDemo {
 
         ChristmasTree myChristmasTree = new ChristmasTree("Новогодние шарики");
 
-        myChristmasTree.garland();
+        myChristmasTree.garlandSwitchOn();
 
     }
 }

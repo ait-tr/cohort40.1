@@ -8,7 +8,7 @@ public class ChristmasTree {
         this.christmasTreeToys = christmasTreeToys;
     }
 
-    public void garland(){
+    public void garlandSwitchOn(){
         System.out.println("Гирлянда горит!");
         System.out.println("Игрушки на елке:" + christmasTreeToys);
     }
