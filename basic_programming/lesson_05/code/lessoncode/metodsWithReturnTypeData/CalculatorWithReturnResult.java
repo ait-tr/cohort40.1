@@ -7,5 +7,6 @@ public class CalculatorWithReturnResult {
         int result = a + b;
         return result;
     }
-
+// добавить три метода которые бы возвращали результат вычитания, умножения и деления
+    // и использовать их
 }
