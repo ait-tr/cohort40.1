@@ -18,8 +18,5 @@ public class CalculatorsDemo {
 
         System.out.println("Результат сложения x = " + x + " и у = " + y + " будет равен: " + resultFromMethod);
 
-
-
-
     }
 }
