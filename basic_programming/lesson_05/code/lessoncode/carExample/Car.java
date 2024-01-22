@@ -13,6 +13,7 @@ public class Car {
     public void engineStart(String message) {
         System.out.println(message);
         System.out.println("Автомобиль " + producer + " " + model + " включил двигатель");
+        System.out.println("Двигатель: " + engine);
     }
 
     public void engineStop() {

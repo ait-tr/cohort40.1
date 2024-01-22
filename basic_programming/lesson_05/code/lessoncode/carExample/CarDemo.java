@@ -6,6 +6,7 @@ public class CarDemo {
         myCar1.producer = "Volvo";
         myCar1.model = "S80";
         myCar1.maxSpeed = 280;
+        myCar1.engine = " 2493 см куб";
 
         Car myCar2 = new Car();
         myCar2.producer = "Jaguar";
