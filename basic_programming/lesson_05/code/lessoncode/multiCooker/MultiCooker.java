@@ -20,6 +20,7 @@ public class MultiCooker {
         this.volume = volume;
     }
 
+
     public void changeProgram(int newProgramNumber, String newProgram){
         this.currentProgramNumber = newProgramNumber;
         this.nameProgram = newProgram;
