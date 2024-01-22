@@ -3,8 +3,8 @@ package metodsWithReturnTypeData;
 public class CalculatorWithReturnResult {
 
 
-    public int sum(int x, int y){
-        int result = x + y;
+    public int sum(int a, int b){
+        int result = a + b;
         return result;
     }
 

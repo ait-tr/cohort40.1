@@ -4,8 +4,8 @@ public class CalculatorVoid {
 
     int result;
 
-    public void sum(int x, int y){
-        result = x + y;
-        System.out.println("Результат сложения x = " + x + " и у = " + y + " будет равен: " + result);
+    public void sum(int a, int b){
+        result = a + b;
+        System.out.println("Результат сложения x = " + a + " и у = " + b + " будет равен: " + result);
     }
 }
