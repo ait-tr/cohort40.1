@@ -26,17 +26,9 @@ public class Moto {
         return model;
     }
 
-//    public void setModel(String model) {
-//        this.model = model;
-//    }
-
     public String getProducer() {
         return producer;
     }
-
-//    public void setProducer(String producer) {
-//        this.producer = producer;
-//    }
 
 
     public void startRoad(){
