@@ -15,5 +15,6 @@ public class MotoDemo {
         System.out.println(moto.getColor());
 
         moto.startRoad();
+
     }
 }
