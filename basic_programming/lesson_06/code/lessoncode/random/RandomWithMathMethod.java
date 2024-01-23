@@ -38,6 +38,17 @@ public class RandomWithMathMethod {
         System.out.println("4th random example: " + Math.round(random4));
         System.out.println("5th random example: " + Math.round(random5));
 
+        /*
+        Math.round() - стандартное округление
+
+        Math.floor() - округление вниз до ближайшего целого - по сути отбрасывает после запятой 2,9 -> 2
+
+        Math.cell()- округление вверх до ближайшего целого - 2,1 -> 3
+         */
+
+        double myDouble = 3.1415497;
+
+        System.out.println(Math.round(myDouble * 10000) / 10000.0);
 
     }
 }
