@@ -28,9 +28,9 @@ public class RandomWithMathMethod {
         System.out.println(random2Int);
 
 
-        double random3 = Math.random() * ( 100 - 0 + 1) + 0;
-        double random4 = Math.random() * ( 150 - 120 + 1) + 120;
-        double random5 = Math.random() * ( 1_000_000 - 150_000 + 1) + 150_000;
+        double random3 = Math.random() * (100 - 0 + 1) + 0;
+        double random4 = Math.random() * (150 - 120 + 1) + 120;
+        double random5 = Math.random() * (1_000_000 - 150_000 + 1) + 150_000;
 
         System.out.println("1st random example: " + Math.round(random1));
         System.out.println("2nd random example: " + Math.round(random2));
