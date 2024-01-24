@@ -1,3 +1,5 @@
+package pizzaExampleSimple;
+
 public class CalculatorCalories {
     /*
 
