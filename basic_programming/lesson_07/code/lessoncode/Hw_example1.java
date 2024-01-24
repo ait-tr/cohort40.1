@@ -16,6 +16,7 @@ public class Hw_example1 {
 в формуле вычисления середины - округлить вниз для первого слова или округлить вверх для второго слова
 
 
+
 Распечатать на консоль.
 
 2 Напишите метод, который принимает в качестве параметра строку, передайте в этот метод строку, которую создали в п.1
@@ -42,6 +43,9 @@ public class Hw_example1 {
         int secondWordLength = word2.length();
 
         int middleIndexFirstWord = firstWordLength / 2 ;
+
+
+        int middleIndexSecondWord = (int) Math.ceil(secondWordLength / 2.0);
         /*
         Исходя из задания, например
 
@@ -54,17 +58,31 @@ public class Hw_example1 {
 
        Для нечетного количества символов
         "012345678" - длина слова 9 символов
-        серединный индекс = 9 / 2 = 4
+        серединный индекс = (int) (9 / 2) = 4
 
         то есть при вызове метода substring(0,4) мы получим результат "0123"
 
 
-       но если мы вызываем substring(4,9) мы получим результат "45678"
+
+
+       но если мы вызываем substring(5,9) мы получим результат "45678"
 
 
          */
 
+        System.out.println(middleIndexFirstWord);
+        System.out.println(middleIndexSecondWord);
 
+        // получаем подстроки
+
+        String firstPart = word1.substring(0,middleIndexFirstWord);
+        String secondPart = word2.substring(middleIndexSecondWord);
+
+        // соединяем строки
+
+        String mergeWord = firstPart + secondPart;
+
+        System.out.println("Результат слияния: " + mergeWord) ;
 
     }
 }
