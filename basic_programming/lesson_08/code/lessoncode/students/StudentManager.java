@@ -16,7 +16,9 @@ public class StudentManager {
         String studentCardNumber = ui.inputText("Номер студенческого: ");
         String group = ui.inputText("Группа: ");
 
-        return new Student(lastName, firstName,studentCardNumber,group);
+        Student newStudent = new Student(lastName, firstName,studentCardNumber,group);
+
+        return newStudent;
     }
 
 }
