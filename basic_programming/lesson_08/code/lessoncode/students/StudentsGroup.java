@@ -18,6 +18,5 @@ public class StudentsGroup {
         student2.printStudentInfo();
         student3.printStudentInfo();
 
-        manager.closeScanner();
     }
 }
