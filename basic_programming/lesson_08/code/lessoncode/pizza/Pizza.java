@@ -1,4 +1,4 @@
-package pizzaWithClasses;
+package pizza;
 
 public class Pizza {
 

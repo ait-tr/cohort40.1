@@ -1,4 +1,7 @@
-package pizzaExampleSimple;
+package pizza;
+
+
+import scanner.UserInput;
 
 public class CalculatorCalories {
     /*
@@ -28,19 +31,25 @@ caloriesInOneCm = 40;
 
     public static void main(String[] args) {
 
-        int diameterPizza1 = 24;
+        UserInput ui = new UserInput();
 
-        int diameterPizza2 = 28;
+        int diameterPizza = ui.inputInteger("Please enter first pizza diameter: ");
 
-        int caloriesInOneCm = 40;
+        int caloriesInOneCm = ui.inputInteger("Please enter 1 cm pizza calories: ");
 
-        double caloriesPizza1 = caloriesInOneCm * Math.PI * (diameterPizza1 * diameterPizza1) / 4;
+        Pizza pizza1 = new Pizza(diameterPizza, caloriesInOneCm);
 
-        double caloriesPizza2 = caloriesInOneCm * Math.PI * (diameterPizza2 * diameterPizza2) / 4;
+        diameterPizza = ui.inputInteger("Please enter second pizza diameter: ");
 
-        double extraCalories = caloriesPizza2 - caloriesPizza1;
+        caloriesInOneCm = ui.inputInteger("Please enter 1 cm pizza calories: ");
+
+        Pizza pizza2 = new Pizza(diameterPizza,caloriesInOneCm);
+
+        double extraCalories = pizza2.totalCaloriesInPizza() - pizza1.totalCaloriesInPizza();
 
         System.out.println("Количество лишних калорий: " + extraCalories);
+
+        System.out.println(pizza1.diameter);
     }
 
 
