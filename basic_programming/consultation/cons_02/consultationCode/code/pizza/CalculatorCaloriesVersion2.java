@@ -35,9 +35,9 @@ caloriesInOneCm = 40;
         int caloriesInOneCm = 40;
 
 
-        code.pizza.Pizza pizza1 = new code.pizza.Pizza(diameterPizza1, caloriesInOneCm);
+        Pizza pizza1 = new Pizza(diameterPizza1, caloriesInOneCm);
 
-        code.pizza.Pizza pizza2 = new Pizza(diameterPizza2,caloriesInOneCm);
+        Pizza pizza2 = new Pizza(diameterPizza2,caloriesInOneCm);
 
         double extraCalories = pizza2.totalCaloriesInPizza() - pizza1.totalCaloriesInPizza();
 

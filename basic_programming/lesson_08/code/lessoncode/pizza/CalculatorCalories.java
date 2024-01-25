@@ -31,7 +31,7 @@ caloriesInOneCm = 40;
 
     public static void main(String[] args) {
 
-       PizzaUtil util = new PizzaUtil();
+        PizzaUtil util = new PizzaUtil();
 
         Pizza pizza1 = util.createPizza();
 
