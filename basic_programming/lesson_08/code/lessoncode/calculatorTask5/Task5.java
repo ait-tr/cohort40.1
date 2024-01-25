@@ -38,8 +38,5 @@ public class Task5 {
         System.out.println("Divide: " + calculator.div(firstNumber,secondNumber));
 
 
-
-
-
     }
 }
