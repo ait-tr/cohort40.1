@@ -31,19 +31,11 @@ caloriesInOneCm = 40;
 
     public static void main(String[] args) {
 
-        UserInput ui = new UserInput();
+       PizzaUtil util = new PizzaUtil();
 
-        int diameterPizza = ui.inputInteger("Please enter first pizza diameter: ");
+        Pizza pizza1 = util.createPizza();
 
-        int caloriesInOneCm = ui.inputInteger("Please enter 1 cm pizza calories: ");
-
-        Pizza pizza1 = new Pizza(diameterPizza, caloriesInOneCm);
-
-        diameterPizza = ui.inputInteger("Please enter second pizza diameter: ");
-
-        caloriesInOneCm = ui.inputInteger("Please enter 1 cm pizza calories: ");
-
-        Pizza pizza2 = new Pizza(diameterPizza,caloriesInOneCm);
+        Pizza pizza2 = util.createPizza();
 
         double extraCalories = pizza2.totalCaloriesInPizza() - pizza1.totalCaloriesInPizza();
 
