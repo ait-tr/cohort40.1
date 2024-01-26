@@ -1,3 +1,5 @@
+package note;
+
 import scanner.UserInput;
 
 public class NoteManager {

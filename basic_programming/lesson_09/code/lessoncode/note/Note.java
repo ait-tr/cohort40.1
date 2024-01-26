@@ -1,3 +1,5 @@
+package note;
+
 public class Note {
 
     private int id;

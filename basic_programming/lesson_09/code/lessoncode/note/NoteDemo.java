@@ -1,3 +1,5 @@
+package note;
+
 public class NoteDemo {
     public static void main(String[] args) {
         NoteManager manager = new NoteManager();
