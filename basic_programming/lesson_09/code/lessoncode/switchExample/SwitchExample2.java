@@ -8,9 +8,9 @@ public class SwitchExample2 {
 
         UserInput ui = new UserInput();
 
-        int word = ui.inputInteger("Please enter any english word: ");
+        int number = ui.inputInteger("Please enter any english word: ");
 
-        switch (word) {
+        switch (number) {
             case 1:
             case 2:
             case 3:
