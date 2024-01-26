@@ -27,7 +27,7 @@ if (условие) {блок кода}
 else {блок кода}
 ```
 
-<img src="https://github.com/ait-tr/cohort40.1/basic_programming/lesson_09/code/img/If.jpeg" width="100%">
+<img src="https://raw.githubusercontent.com/ait-tr/cohort40.1/main/basic_programming/lesson_09/code/img/If.jpeg" width="100%">
 
 ## Тернарный оператор
 Тернарный оператор
@@ -121,6 +121,6 @@ switch(ВыражениеДляВыбора) {
 - String (начиная с Java 7).
 - Перечисление (Enum).
 
-<img src="https://raw.githubusercontent.com/ait-tr/cohort40.1/main/basic_programming/lesson_09/img/switch.jpeg" width="100%">
+<img src="https://raw.githubusercontent.com/ait-tr/cohort40.1/main/basic_programming/lesson_09/code/img/switch.jpeg" width="100%">
 
 
