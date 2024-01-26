@@ -55,6 +55,21 @@ public class ConditionalOperators {
         System.out.println(resultConditionalNOT);
 
 
+        System.out.println("========== ПРИМЕРЫ ИСПОЛЬЗОВАНИЯ ============");
+
+        // ПРИМЕРЫ
+
+
+        int x = 10;
+
+        System.out.println((x > 5) && (x < 15));
+
+        System.out.println((x < 5) && (x < 15));
+
+        System.out.println((x < 5) || (x < 15));
+
+        System.out.println( !(x < 5) );
+
 
 
 
