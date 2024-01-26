@@ -87,7 +87,7 @@ condition ? expression1 : expression2
 ```
 
 ```
-System.out.println((x == 10) ? "x = 10" : "x != 10");jljjhjlljpjljlkkjklj8klikkkyulou0.
+System.out.println((x == 10) ? "x = 10" : "x != 10");
 ```
 
 </details>
