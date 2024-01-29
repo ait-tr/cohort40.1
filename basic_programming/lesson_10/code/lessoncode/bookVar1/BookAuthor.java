@@ -1,3 +1,5 @@
+package bookVar1;
+
 public class BookAuthor {
 
     String authorName;
@@ -8,7 +10,7 @@ public class BookAuthor {
 
     @Override
     public String toString() {
-        return "BookAuthor{" +
+        return "bookVar1.BookAuthor{" +
                 "authorName='" + authorName + '\'' +
                 '}';
     }

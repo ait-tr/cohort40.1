@@ -1,3 +1,5 @@
+package bookVar1;
+
 public class BookAllData {
     BookAuthor bookAuthor;
     BookDetails bookDetails;
@@ -14,7 +16,7 @@ public class BookAllData {
 
     @Override
     public String toString() {
-        return "BookAllData{" +
+        return "bookVar1.BookAllData{" +
                 "bookAuthor=" + bookAuthor +
                 ", bookDetails=" + bookDetails +
                 '}';

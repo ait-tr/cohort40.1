@@ -16,7 +16,7 @@ class Book {
 
 }
 
-class BookDemo {
+class bookVar1.BookDemo {
 
     public static void main(String[] args) {
         Book myBook = new Book("Principles");
