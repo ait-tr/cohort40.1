@@ -1,4 +1,4 @@
-package code;
+package consultation.cons_03.consultationCode.code;
 
 public class Phone {
 

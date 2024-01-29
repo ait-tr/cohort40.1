@@ -1,6 +1,6 @@
-package studentsWithGroup.students;
+package lesson_08.code.lessoncode.studentsWithGroup.students;
 
-import scanner.UserInput;
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class StudentManager {
 

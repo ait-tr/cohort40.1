@@ -1,4 +1,4 @@
-package bookVar2;
+package lesson_10.code.lessoncode.bookVar2;
 
 public class BookApp {
     public static void main(String[] args) {

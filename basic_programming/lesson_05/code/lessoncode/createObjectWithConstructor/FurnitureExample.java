@@ -1,4 +1,4 @@
-package createObjectWithConstructor;
+package lesson_05.code.lessoncode.createObjectWithConstructor;
 
 public class FurnitureExample {
     public static void main(String[] args) {

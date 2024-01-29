@@ -1,4 +1,4 @@
-package publicAndPrivet.moto;
+package lesson_06.code.lessoncode.publicAndPrivet.moto;
 
 public class Moto {
 

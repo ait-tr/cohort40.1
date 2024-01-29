@@ -1,4 +1,4 @@
-package code.note;
+package consultation.cons_03.consultationCode.code.note;
 
 import scanner.UserInput;
 

@@ -1,4 +1,4 @@
-package createObjectWithConstructor;
+package lesson_05.code.lessoncode.createObjectWithConstructor;
 
 public class Phone {
 

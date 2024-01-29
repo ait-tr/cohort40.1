@@ -1,7 +1,7 @@
-package pizza;
+package lesson_08.code.lessoncode.pizza;
 
 
-import scanner.UserInput;
+
 
 public class CalculatorCalories {
     /*

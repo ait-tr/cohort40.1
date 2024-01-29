@@ -1,6 +1,7 @@
-package publicAndPrivet.car;
+package lesson_06.code.lessoncode.publicAndPrivet.car;
 
-import publicAndPrivet.car.entiry.Car;
+
+import lesson_06.code.lessoncode.publicAndPrivet.car.entiry.Car;
 
 public class CarDemo {
     public static void main(String[] args) {

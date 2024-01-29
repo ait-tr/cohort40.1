@@ -1,4 +1,4 @@
-package calculator;
+package consultation.cons_01.consultationCode.calculator;
 
 public class CalculatorsDemo {
     public static void main(String[] args) {

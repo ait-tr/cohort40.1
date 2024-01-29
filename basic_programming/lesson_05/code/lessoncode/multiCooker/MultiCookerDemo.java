@@ -1,4 +1,4 @@
-package multiCooker;
+package lesson_05.code.lessoncode.multiCooker;
 
 public class MultiCookerDemo {
     public static void main(String[] args) {

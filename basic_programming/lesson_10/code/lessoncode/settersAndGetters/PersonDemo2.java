@@ -1,6 +1,5 @@
-package settersAndGetters;
+package lesson_10.code.lessoncode.settersAndGetters;
 
-import scanner.UserInput;
 
 import java.util.Objects;
 import java.util.Scanner;

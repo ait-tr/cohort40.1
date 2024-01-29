@@ -1,3 +1,5 @@
+package lesson_07.code.lessoncode;
+
 import java.util.Scanner;
 
 public class InputText {

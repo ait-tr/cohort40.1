@@ -1,3 +1,5 @@
+package lesson_07.code.lessoncode;
+
 public class MethodsForWorkWithString {
 
     public void lastLineSymbol(String textLine) {

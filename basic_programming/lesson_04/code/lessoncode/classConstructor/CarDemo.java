@@ -1,4 +1,4 @@
-package classConstructor;
+package lesson_04.code.lessoncode.classConstructor;
 
 public class CarDemo {
 

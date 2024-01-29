@@ -1,4 +1,4 @@
-package ifStatement;
+package lesson_09.code.lessoncode.ifStatement;
 
 public class ConditionalOperators {
 

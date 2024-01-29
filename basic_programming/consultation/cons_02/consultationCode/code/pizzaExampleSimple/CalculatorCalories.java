@@ -1,4 +1,4 @@
-package code.pizzaExampleSimple;
+package consultation.cons_02.consultationCode.code.pizzaExampleSimple;
 
 public class CalculatorCalories {
     /*

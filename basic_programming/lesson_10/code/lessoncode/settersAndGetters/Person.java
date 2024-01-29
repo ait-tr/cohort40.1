@@ -1,4 +1,4 @@
-package settersAndGetters;
+package lesson_10.code.lessoncode.settersAndGetters;
 
 public class Person {
 

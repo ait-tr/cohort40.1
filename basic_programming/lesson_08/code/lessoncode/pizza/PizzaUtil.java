@@ -1,6 +1,7 @@
-package pizza;
+package lesson_08.code.lessoncode.pizza;
 
-import scanner.UserInput;
+
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class PizzaUtil {
 

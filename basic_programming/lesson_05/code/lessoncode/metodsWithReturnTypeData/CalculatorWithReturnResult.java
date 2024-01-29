@@ -1,4 +1,4 @@
-package metodsWithReturnTypeData;
+package lesson_05.code.lessoncode.metodsWithReturnTypeData;
 
 public class CalculatorWithReturnResult {
 

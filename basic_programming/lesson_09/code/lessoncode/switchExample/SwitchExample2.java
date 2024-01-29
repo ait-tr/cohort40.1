@@ -1,6 +1,7 @@
-package switchExample;
+package lesson_09.code.lessoncode.switchExample;
 
-import scanner.UserInput;
+
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class SwitchExample2 {
 

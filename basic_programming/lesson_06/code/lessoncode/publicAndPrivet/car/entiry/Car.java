@@ -1,4 +1,4 @@
-package publicAndPrivet.car.entiry;
+package lesson_06.code.lessoncode.publicAndPrivet.car.entiry;
 
 public class Car {
     public String color;

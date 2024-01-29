@@ -1,6 +1,6 @@
-package bookVar2;
+package lesson_10.code.lessoncode.bookVar2;
 
-import scanner.UserInput;
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class BookCreator {
 

@@ -1,4 +1,4 @@
-package zoo;
+package consultation.cons_01.consultationCode.zoo;
 
 public class Horse {
 

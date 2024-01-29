@@ -1,4 +1,4 @@
-package pizza;
+package lesson_08.code.lessoncode.pizza;
 
 public class Pizza {
 

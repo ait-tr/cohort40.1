@@ -1,4 +1,4 @@
-package code.pizza;
+package consultation.cons_02.consultationCode.code.pizza;
 
 public class CalculatorCaloriesVersion2 {
     /*

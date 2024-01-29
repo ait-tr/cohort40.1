@@ -1,4 +1,4 @@
-package carExample;
+package lesson_05.code.lessoncode.carExample;
 
 public class CarDemo {
     public static void main(String[] args) {

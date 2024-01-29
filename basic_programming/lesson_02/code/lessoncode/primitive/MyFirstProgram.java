@@ -1,4 +1,4 @@
-package primitive;
+package lesson_02.code.lessoncode.primitive;
 
 public class MyFirstProgram {
     // класс - это программа которую мы хотим чтобы java-машина выполнила

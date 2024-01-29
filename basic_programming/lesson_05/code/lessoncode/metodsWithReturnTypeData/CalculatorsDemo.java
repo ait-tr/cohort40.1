@@ -1,4 +1,4 @@
-package metodsWithReturnTypeData;
+package lesson_05.code.lessoncode.metodsWithReturnTypeData;
 
 public class CalculatorsDemo {
     public static void main(String[] args) {

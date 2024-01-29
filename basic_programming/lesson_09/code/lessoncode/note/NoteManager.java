@@ -1,6 +1,6 @@
-package note;
+package lesson_09.code.lessoncode.note;
 
-import scanner.UserInput;
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class NoteManager {
 

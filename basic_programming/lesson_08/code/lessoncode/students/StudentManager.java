@@ -1,6 +1,8 @@
-package students;
+package lesson_08.code.lessoncode.students;
 
-import scanner.UserInput;
+
+
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package secondLevelPackage.level3;
+package lesson_02.code.lessoncode.secondLevelPackage.level3;
 
 public class Level3 {
 }

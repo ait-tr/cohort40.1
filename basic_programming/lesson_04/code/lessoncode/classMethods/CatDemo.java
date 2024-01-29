@@ -1,4 +1,4 @@
-package classMethods;
+package lesson_04.code.lessoncode.classMethods;
 
 public class CatDemo {
     public static void main(String[] args) {

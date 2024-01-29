@@ -1,4 +1,5 @@
-package students_ver_1;
+package consultation.cons_01.consultationCode.students_ver_1;
+
 
 public class Student {
     String surName;

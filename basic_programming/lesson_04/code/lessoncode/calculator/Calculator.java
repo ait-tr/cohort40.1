@@ -1,4 +1,4 @@
-package calculator;
+package lesson_04.code.lessoncode.calculator;
 
 public class Calculator {
 

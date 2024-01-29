@@ -1,3 +1,5 @@
+package lesson_07.code.lessoncode;
+
 public class FindAndReplaceText {
     public static void main(String[] args) {
 

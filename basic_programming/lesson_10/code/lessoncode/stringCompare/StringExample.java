@@ -1,4 +1,4 @@
-package stringCompare;
+package lesson_10.code.lessoncode.stringCompare;
 
 public class StringExample {
     public static void main(String[] args) {

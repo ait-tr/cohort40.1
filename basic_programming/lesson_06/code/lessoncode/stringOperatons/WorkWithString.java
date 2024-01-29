@@ -1,4 +1,4 @@
-package stringOperatons;
+package lesson_06.code.lessoncode.stringOperatons;
 
 public class WorkWithString {
     public static void main(String[] args) {

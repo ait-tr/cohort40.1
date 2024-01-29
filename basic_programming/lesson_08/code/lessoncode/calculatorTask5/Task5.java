@@ -1,4 +1,4 @@
-package calculatorTask5;
+package lesson_08.code.lessoncode.calculatorTask5;
 
 public class Task5 {
     /*

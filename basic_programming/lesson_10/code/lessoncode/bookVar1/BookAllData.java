@@ -1,4 +1,4 @@
-package bookVar1;
+package lesson_10.code.lessoncode.bookVar1;
 
 public class BookAllData {
     BookAuthor bookAuthor;

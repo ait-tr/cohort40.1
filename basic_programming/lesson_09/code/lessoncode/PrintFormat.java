@@ -1,4 +1,6 @@
-import scanner.UserInput;
+package lesson_09.code.lessoncode;
+
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class PrintFormat {
     public static void main(String[] args) {

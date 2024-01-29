@@ -1,4 +1,4 @@
-package createClassExample;
+package consultation.cons_01.consultationCode.createClassExample;
 
 public class ChristmasTree {
 

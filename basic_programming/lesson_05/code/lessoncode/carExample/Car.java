@@ -1,4 +1,4 @@
-package carExample;
+package lesson_05.code.lessoncode.carExample;
 
 public class Car {
     public String model;

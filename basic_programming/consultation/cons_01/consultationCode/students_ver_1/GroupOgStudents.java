@@ -1,4 +1,4 @@
-package students_ver_1;
+package consultation.cons_01.consultationCode.students_ver_1;
 
 public class GroupOgStudents {
     public static void main(String[] args) {

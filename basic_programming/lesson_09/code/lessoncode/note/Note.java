@@ -1,4 +1,4 @@
-package note;
+package lesson_09.code.lessoncode.note;
 
 public class Note {
 

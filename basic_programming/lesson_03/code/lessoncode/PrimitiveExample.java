@@ -1,3 +1,5 @@
+package lesson_03.code.lessoncode;
+
 public class PrimitiveExample {
     public static void main(String[] args) {
         double xDouble = 10.5;

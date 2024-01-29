@@ -1,6 +1,6 @@
-package settersAndGetters;
+package lesson_10.code.lessoncode.settersAndGetters;
 
-import scanner.UserInput;
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class PersonCreate {
 

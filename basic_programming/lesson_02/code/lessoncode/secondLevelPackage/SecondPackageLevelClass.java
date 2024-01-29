@@ -1,4 +1,4 @@
-package secondLevelPackage;
+package lesson_02.code.lessoncode.secondLevelPackage;
 
 public class SecondPackageLevelClass {
 

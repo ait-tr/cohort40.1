@@ -1,4 +1,4 @@
-package studentsWithGroup.students;
+package lesson_08.code.lessoncode.studentsWithGroup.students;
 
 public class StudentsGroup {
     public static void main(String[] args) {
