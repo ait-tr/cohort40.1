@@ -35,6 +35,8 @@ public class PersonDemo2 {
         System.out.println("personAddress: " + person2.getAddress());
         System.out.println("personCode: " + person2.getPersonalCode());
 
+        System.out.println("-------------------------");
+
 
     }
 }
