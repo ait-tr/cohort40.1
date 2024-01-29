@@ -1,6 +1,7 @@
 package consultation.cons_03.consultationCode.code.note;
 
-import scanner.UserInput;
+
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class NoteManager {
 
