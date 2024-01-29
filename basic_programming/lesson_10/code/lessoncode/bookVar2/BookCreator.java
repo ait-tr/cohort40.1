@@ -11,11 +11,18 @@ public class BookCreator {
         int bookPages = ui.inputInteger("Please enter book pages: ");
         String bookCatalogNumber = ui.inputText("Please enter book catalog number: ");
         if (bookCatalogNumber.equals("")) {
-            bookCatalogNumber = "undefine";
+            bookCatalogNumber = "undefined";
         }
 
         return new Book(bookName,bookAuthor,bookPages,bookCatalogNumber);
 
+    }
 
+    public Book updateBook(Book bookForUpdate){
+        UserInput ui = new UserInput();
+        System.out.println("Вы пропустили данные в момент их ввода!");
+        String bookCatalogNumber = ui.inputText("Please enter book catalog number: ");
+        bookForUpdate.setCatalogNumber(bookCatalogNumber);
+        return bookForUpdate;
     }
 }
