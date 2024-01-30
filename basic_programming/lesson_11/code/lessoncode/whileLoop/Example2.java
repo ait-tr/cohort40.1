@@ -32,6 +32,9 @@ public class Example2 {
                    System.out.println("Exit ...");
                    condition = false;
                    break;
+               default:
+                   System.out.println("Wrong choose!");
+                   break;
 
            }
        }
