@@ -17,6 +17,7 @@ public class Example2ForOrWhile {
         System.out.println("---------- Теперь цикл FOR -----------");
 
         for (int i = 0; i < text.length(); i++) {
+
             char currentChar = text.charAt(i);
             System.out.println("Буква в тексте с индексом " + i + " : " + currentChar);
         }
