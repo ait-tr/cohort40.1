@@ -22,33 +22,17 @@ public class Task2 {
     public static void main(String[] args) {
 
         UserInput userInput = new UserInput();
+        SimpleNumber simpleNumber = new SimpleNumber();
 
         int userInt = userInput.inputInteger("Please enter integer number: ");
 
-        boolean isSimple = true;
-
-        int delitel = 1;
-
-
-        for (int i = 2; i < (userInt / 2) ; i++) {
-
-            if (userInt % i == 0) {
-                isSimple = false;
-                delitel = i;
-                break;
-            }
-
-        }
+        boolean isSimple = simpleNumber.isSimple(userInt);
 
         if (isSimple) {
             System.out.println("Число " + userInt + " является простым.");
         } else {
             System.out.println("Число " + userInt + " не является простым.");
-            System.out.println("Его первый делитель = " + delitel);
         }
-
-
-
     }
 
 }
