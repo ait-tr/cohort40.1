@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayExample3 {
     public static void main(String[] args) {
-        int[] oldArray = {10,20,30,40,50,60,70,80,90,100,110,120};
+        int[] oldArray = {10,20,30,40,50,60,70,80,90,100,110,120, 130};
 
         System.out.println(Arrays.toString(oldArray));
 
