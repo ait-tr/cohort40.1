@@ -2,6 +2,8 @@ package lesson_13.code.lessoncode;
 
 import lesson_06.code.lessoncode.scanner.UserInput;
 
+import java.util.Arrays;
+
 public class UseArrayForWorkWithMethods {
     public static void main(String[] args) {
         /*
@@ -53,6 +55,31 @@ public class UseArrayForWorkWithMethods {
         for (int i = 0; i < workingArray.length; i++) {
             workingArray[i] = userInput.inputInteger("Введите значение " + i + "-ого элемента массива");
         }
+
+        System.out.println(Arrays.toString(workingArray));
+
+        int sumAllElements = 0;
+
+        for (int i = 0; i < workingArray.length; i++) {
+            sumAllElements += workingArray[i];
+    // сокращенная форма записи, эквивалентно: sumAllElements = sumAllElements + workingArray[i];
+        }
+
+        System.out.println("Сумма всех элементов: " + sumAllElements);
+
+        int maxElementValue = workingArray[0];
+        // берем в качестве начального значения - значение первого элемента, а не 0
+        // потому что массив может содержать только отрицательные значения и тогда
+        // 0 всегда будет больше любого другого элемента
+
+        for (int i = 1; i < workingArray.length; i++) {
+            if (workingArray[i] > maxElementValue) {
+                maxElementValue = workingArray[i];
+            }
+        }
+
+        System.out.println("Максимальное значение = " + maxElementValue);
+
 
 
     }
