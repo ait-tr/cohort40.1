@@ -20,7 +20,7 @@ public class UseArrayForWorkWithMethods {
         для п2:
         в цикле по длине массива для каждого элемента массива нужно
         запросить у пользователя данные и сохранить то что он ввел
-        в соответсвующей ячейке массива
+        в соответствующей ячейке массива
 
         для п3:
         объявляем переменную Sum в которой будет хранится сумма
@@ -48,6 +48,11 @@ public class UseArrayForWorkWithMethods {
 
         int lengthOurArray = userInput.inputInteger("введите длину массива");
 
+        int[] workingArray = new int[lengthOurArray];
+
+        for (int i = 0; i < workingArray.length; i++) {
+            workingArray[i] = userInput.inputInteger("Введите значение " + i + "-ого элемента массива");
+        }
 
 
     }
