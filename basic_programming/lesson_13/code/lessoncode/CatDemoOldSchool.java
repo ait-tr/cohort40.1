@@ -2,7 +2,7 @@ package lesson_13.code.lessoncode;
 
 import lesson_06.code.lessoncode.scanner.UserInput;
 
-public class CatDemo {
+public class CatDemoOldSchool {
     public static void main(String[] args) {
 
         Cat cat1 = new Cat("Murzik");
