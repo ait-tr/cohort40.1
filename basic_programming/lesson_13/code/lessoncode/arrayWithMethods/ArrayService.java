@@ -45,4 +45,10 @@ public class ArrayService {
         return maxElementValue;
     }
 
+    public int avgAllElements(int[] workingArray){
+        int avg = sumAllElements(workingArray);
+
+        return avg / workingArray.length;
+    }
+
 }

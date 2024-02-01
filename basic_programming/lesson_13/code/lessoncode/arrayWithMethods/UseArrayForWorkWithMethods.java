@@ -35,6 +35,9 @@ public class UseArrayForWorkWithMethods {
         System.out.println("Максимальное значение = " + maxElementValue);
 
 
+        int avg = service.avgAllElements(ourWorkingArray);
+
+        System.out.println("Average = " + avg);
 
     }
 }
