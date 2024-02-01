@@ -1,4 +1,4 @@
-package lesson_13.code.lessoncode;
+package lesson_13.code.lessoncode.arrayDemo;
 
 import lesson_06.code.lessoncode.scanner.UserInput;
 

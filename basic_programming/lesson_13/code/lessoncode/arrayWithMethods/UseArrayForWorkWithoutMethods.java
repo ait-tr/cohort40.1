@@ -1,10 +1,10 @@
-package lesson_13.code.lessoncode;
+package lesson_13.code.lessoncode.arrayWithMethods;
 
 import lesson_06.code.lessoncode.scanner.UserInput;
 
 import java.util.Arrays;
 
-public class UseArrayForWorkWithMethods {
+public class UseArrayForWorkWithoutMethods {
     public static void main(String[] args) {
         /*
         1) Создать массив той длины, которую введет пользователь
