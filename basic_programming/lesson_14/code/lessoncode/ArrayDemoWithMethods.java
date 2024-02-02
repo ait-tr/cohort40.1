@@ -23,13 +23,29 @@ public class ArrayDemoWithMethods {
 
         int[] myArray = service.createIntArray(lengthForOurArray);
 
-        System.out.println(Arrays.toString(myArray));
+        service.printArrayData(myArray);
 
-        int intervalStart = userInput.inputInteger("Введите начальное значение диапазона чисел: ");
+        boolean isNotCorrectUserInput = true;
 
-        int intervalEnd = userInput.inputInteger("Введите конечное значение диапазона чисел: ");
+        int intervalStart = 0;
+        int intervalEnd = 0;
+
+        while (isNotCorrectUserInput) {
+
+            intervalStart = userInput.inputInteger("Введите начальное значение диапазона чисел: ");
+            intervalEnd = userInput.inputInteger("Введите конечное значение диапазона чисел: ");
+
+            if (intervalStart < intervalEnd) {
+                isNotCorrectUserInput = false;
+            } else {
+                System.out.println("Вы ввели некорректные данные");
+            }
+        }
 
 
+        service.fillArrayRandom(myArray,intervalStart,intervalEnd);
+
+        service.printArrayData(myArray);
 
     }
 }
