@@ -1,5 +1,7 @@
 package lesson_14.code.lessoncode;
 
+import java.util.Random;
+
 public class ArrayService {
      /*
         1) получить длину массива от пользователя
@@ -12,6 +14,23 @@ public class ArrayService {
     public int[] createIntArray(int arrayLength){
         int[] newArray = new int[arrayLength];
         return newArray;
+    }
+
+    public void fillArrayRandom(int[] workingArray, int startValue, int endValue){
+        /*
+        1. воспользоваться классом Random
+        2. в цикле от 0 до конца массива для КАЖДОГО элемента нужно:
+            - вычислить рандомное число из диапазона от startValue до  endValue
+            - сохранить это значение с i-ом элементе массива
+         */
+
+        Random random = new Random();
+
+        for (int i = 0; i < workingArray.length; i++) {
+            int randomValue = random.nextInt(startValue, endValue);
+            workingArray[i] = randomValue;
+        }
+
     }
 
 

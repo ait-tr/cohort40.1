@@ -25,6 +25,10 @@ public class ArrayDemoWithMethods {
 
         System.out.println(Arrays.toString(myArray));
 
+        int intervalStart = userInput.inputInteger("Введите начальное значение диапазона чисел: ");
+
+        int intervalEnd = userInput.inputInteger("Введите конечное значение диапазона чисел: ");
+
 
 
     }
