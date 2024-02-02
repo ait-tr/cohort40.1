@@ -12,11 +12,16 @@ public class ArrayDemoWithMethods {
         5) вывести информацию о массиве на экран
          */
 
+
+        // создаем экземпляры нужных нам классов чтобы иметь
+        // возможность воспользоваться методами которые в них есть
+
         ArrayService service = new ArrayService();
+        UserInput userInput = new UserInput();
 
-       // int[] myArray = new int[15];
+        int lengthForOurArray = userInput.inputInteger("Введите длину массива: ");
 
-        int[] myArray = service.createIntArray(5);
+        int[] myArray = service.createIntArray(lengthForOurArray);
 
         System.out.println(Arrays.toString(myArray));
 
