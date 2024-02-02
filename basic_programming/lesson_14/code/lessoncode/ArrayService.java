@@ -35,10 +35,10 @@ public class ArrayService {
 
     public void printArrayData(int[] workingArray){
         System.out.println("Данные элементов массива:");
-        System.out.println();
         for (int i = 0; i < workingArray.length; i++) {
             System.out.print(workingArray[i] + ", ");
         }
+        System.out.println();
     }
 
 }
