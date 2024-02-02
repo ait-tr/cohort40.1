@@ -19,13 +19,26 @@ public class ArrayDemoWithMethods {
         ArrayService service = new ArrayService();
         UserInput userInput = new UserInput();
 
-        int lengthForOurArray = userInput.inputInteger("Введите длину массива: ");
+        boolean isNotCorrectUserInput = true;
+
+        int lengthForOurArray =0;
+
+        while (isNotCorrectUserInput) {
+
+            lengthForOurArray = userInput.inputInteger("Введите длину массива: ");
+
+            if (lengthForOurArray > 0) {
+                isNotCorrectUserInput = false;
+            } else {
+                System.out.println("Вы ввели некорректные данные");
+            }
+        }
 
         int[] myArray = service.createIntArray(lengthForOurArray);
 
         service.printArrayData(myArray);
 
-        boolean isNotCorrectUserInput = true;
+        isNotCorrectUserInput = true;
 
         int intervalStart = 0;
         int intervalEnd = 0;
