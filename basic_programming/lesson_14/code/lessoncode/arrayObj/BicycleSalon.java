@@ -27,6 +27,27 @@ public class BicycleSalon {
             System.out.println("------------------------------");
         }
 
+        // Задача - посчитать количество велосипедов городского типа?
 
+        int cityBikeCounter = 0;
+
+        String typeOfBike = "CityType";
+
+        for (int i = 0; i < bicycles.length; i++) {
+            if (bicycles[i].getType().equals(typeOfBike)) {
+                cityBikeCounter++;
+            }
+        }
+
+        if (cityBikeCounter > 0) {
+        System.out.println("На складе " + cityBikeCounter + " велосипедов городского типа: " + typeOfBike);
+        } else {
+            System.out.println("Таких велосипедов на складе нет");
+        }
+
+
+//        Bicycle[] cityBicycles = {bicycle1,bicycle3,bicycle5};
+//
+//        System.out.println(Arrays.toString(cityBicycles));
     }
 }
