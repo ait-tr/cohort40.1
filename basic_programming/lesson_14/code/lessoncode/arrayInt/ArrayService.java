@@ -1,4 +1,4 @@
-package lesson_14.code.lessoncode;
+package lesson_14.code.lessoncode.arrayInt;
 
 import java.util.Random;
 

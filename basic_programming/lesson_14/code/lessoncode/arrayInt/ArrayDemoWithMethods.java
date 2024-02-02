@@ -1,6 +1,4 @@
-package lesson_14.code.lessoncode;
-
-import java.util.Arrays;
+package lesson_14.code.lessoncode.arrayInt;
 
 public class ArrayDemoWithMethods {
     public static void main(String[] args) {
