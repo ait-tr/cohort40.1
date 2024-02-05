@@ -1,4 +1,4 @@
-package consultation.cons_05.consultationCode.code;
+package consultation.cons_05.consultationCode.code.tea;
 
 public class ProducerOfTea {
     String producer;
