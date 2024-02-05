@@ -1,5 +1,7 @@
 package lesson_15.code.lessoncode.searchInArray;
 
+import java.util.Arrays;
+
 public class BinarySearch {
     public static void main(String[] args) {
         /*
@@ -101,6 +103,8 @@ public class BinarySearch {
             System.out.println("Search element " + elementForSearch + " not found ");
 
         }
+
+        System.out.println("Индекс числа 29 =>  " + Arrays.binarySearch(arrayForSearch, 29));
 
 
     }
