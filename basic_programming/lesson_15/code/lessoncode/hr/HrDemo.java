@@ -28,6 +28,8 @@ public class HrDemo {
         System.out.println(departments[0]);
         System.out.println(departments[1]);
 
+        System.out.println("Директор: " + company.director);
+
 
 
     }
