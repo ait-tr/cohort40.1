@@ -86,5 +86,22 @@ public class BinarySearch {
 
 
          */
+
+        int[] arrayForSearch = {1,3,5,7,9,12,15,19,21,26,29,35,39,43,48,50,100};
+
+        int elementForSearch = 19;
+
+        SearchInArray search = new SearchInArray();
+
+        int indexSearch = search.linearSearch(arrayForSearch,elementForSearch);
+
+        if (indexSearch >= 0) {
+            System.out.println("Search element " + elementForSearch + " have index " + indexSearch);
+        } else {
+            System.out.println("Search element " + elementForSearch + " not found ");
+
+        }
+
+
     }
 }
