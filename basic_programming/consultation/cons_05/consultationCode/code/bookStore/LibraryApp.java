@@ -41,6 +41,9 @@ public class LibraryApp {
 
         library.printDataLibrary();
 
+        System.out.println("------------");
+        library.searchDataLibrary("Черный");
+
 
     }
 }

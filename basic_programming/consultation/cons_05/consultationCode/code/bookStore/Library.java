@@ -38,9 +38,37 @@ public class Library {
                 for (int k = 0; k < booksOnCurrentShelf.length; k++) {
                     System.out.println("Книга: " + booksOnCurrentShelf[k]);
                 }
-
-
             }
         }
+    }
+
+    public void searchDataLibrary(String bookNameSearch){
+
+        Book bookSearch = null;
+
+        for (int i = 0; i < library.length; i++) {
+
+            BookStorage currentBookStorage = library[i]; // берем из массива шкафов текущий шкаф
+            BookShelf[] shelvesFromCurrentStorage = currentBookStorage.getBookShelves(); // из этого шкафа получаем ссылку на объект - массив полок ЭТОГО шкафа
+
+            for (int j = 0; j < shelvesFromCurrentStorage.length; j++) {
+                BookShelf currentBookShelf = shelvesFromCurrentStorage[j]; // берем из этого массива полок - очередную полку
+                Book[] booksOnCurrentShelf = currentBookShelf.getBooksOnShelf(); // с этой полки получаем ссылку на массив книг которые на ней находятся
+
+
+                for (int k = 0; k < booksOnCurrentShelf.length; k++) {
+                    if (booksOnCurrentShelf[k].getBookName().contains(bookNameSearch)) {
+                        bookSearch = booksOnCurrentShelf[k];
+                    }
+                }
+            }
+        }
+
+        if (bookSearch != null) {
+            System.out.println("Нашли книгу: " + bookSearch);
+        } else {
+            System.out.println("Такой книги нет");
+        }
+
     }
 }
