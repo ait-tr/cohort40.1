@@ -106,6 +106,5 @@ public class BinarySearch {
 
         System.out.println("Индекс числа 29 =>  " + Arrays.binarySearch(arrayForSearch, 29));
 
-
     }
 }
