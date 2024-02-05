@@ -30,6 +30,21 @@ public class HrDemo {
 
         System.out.println("Директор: " + company.director);
 
+        // ищем сотрудника с именем ОЛЬГА
+
+        String searchName = "Victor";
+
+        for (int i = 0; i < company.departments.length; i++) {
+           Department currentDepartment = company.departments[i];
+            for (int j = 0; j < currentDepartment.persons.length; j++) {
+                Person currentPerson = currentDepartment.persons[j];
+                if (currentPerson.name.equals(searchName)) {
+                    System.out.println("НАШЛИ!!!");
+                    System.out.println(currentPerson);
+                    System.out.println(currentDepartment.departmentName);
+                }
+            }
+        }
 
 
     }
