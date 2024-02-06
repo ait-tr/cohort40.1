@@ -32,6 +32,27 @@ public class ChooseSort {
         System.out.println(Arrays.toString(arrayForSort));
         System.out.println("---------------------------");
 
+        for (int i = 0; i < arrayForSort.length; i++) {
+            System.out.println("Iteration " + i);
+            System.out.println(Arrays.toString(arrayForSort));
+
+            int min = arrayForSort[i];
+            int minId = i;
+
+            for (int j = i + 1; j < arrayForSort.length; j++) {
+                if (arrayForSort[j] < min) {
+                    min = arrayForSort[j];
+                    minId = j;
+                }
+            }
+
+            System.out.println(i + " element - " + arrayForSort[i] + " will be change with element index: " + minId + " value: " + min );
+
+            int temp = arrayForSort[i];
+            arrayForSort[i] = min;
+            arrayForSort[minId] = temp;
+
+        }
 
 
         System.out.println("----------------------");
