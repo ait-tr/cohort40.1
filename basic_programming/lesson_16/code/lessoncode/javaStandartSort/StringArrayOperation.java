@@ -33,5 +33,8 @@ public class StringArrayOperation {
 //
 //        System.out.println(Arrays.toString(textArray));
 
+
+//        System.out.println("hello 123".replaceAll("[0-9]", "\\$"));
+
     }
 }
