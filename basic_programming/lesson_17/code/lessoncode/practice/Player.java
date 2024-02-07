@@ -36,7 +36,7 @@ public class Player {
     private void fillTicket(int sizeTicket, int sizeLotteryNumbers, boolean isRandom){
         for (int i = 0; i < tickets.length; i++) {
             tickets[i] = new LotteryTicket();
-            tickets[i].createAndFillTicket(sizeTicket,sizeLotteryNumbers, isRandom);
+            tickets[i].createAndFillTicket(sizeTicket,sizeLotteryNumbers, isRandom, i);
             Arrays.sort(tickets[i].getTicketNumbers());
         }
     }

@@ -1,9 +1,5 @@
 package lesson_17.code.lessoncode.practice;
 
-import lesson_06.code.lessoncode.scanner.UserInput;
-
-import java.util.Random;
-
 public class LotteryTicket {
     private int[] ticketNumbers;
 
@@ -11,30 +7,15 @@ public class LotteryTicket {
         return ticketNumbers;
     }
 
-    public void createAndFillTicket(int sizeTicket, int sizeLotteryNumbers, boolean isRandom){
+    public void createAndFillTicket(int sizeTicket, int sizeLotteryNumbers, boolean isRandom, int idTicket){
         ticketNumbers = new int[sizeTicket];
-        fillTicket(sizeLotteryNumbers, isRandom);
+        fillTicket(sizeLotteryNumbers, isRandom,idTicket);
     }
 
 
-    private boolean isRandomNumberNotRepeate(int checkNumber){
-        for (int i = 0; i < ticketNumbers.length; i++) {
-            if (ticketNumbers[i] == checkNumber) {
-                return false;
-            }
-        }
-        return true;
-    }
+    private void fillTicket(int sizeLotteryNumbers, boolean isRandom, int idTicket){
 
-
-
-
-
-    private void fillTicket(int sizeLotteryNumbers, boolean isRandom){
-
-        Random random = new Random();
-        UserInput userInput = new UserInput();
-
+        SourceTicketNumbers source = new SourceTicketNumbers();
 
         for (int i = 0; i < ticketNumbers.length; i++) {
 
@@ -43,11 +24,7 @@ public class LotteryTicket {
 
             while (isNotFillCurrentNumber) {
 
-                if (isRandom) {
-                    currentRandomValue = random.nextInt(sizeLotteryNumbers + 1);
-                } else {
-                    currentRandomValue = userInput.inputInteger("Введите " + i + " число вашего билет: ");
-                }
+                source.receiveTicketNumber(isRandom, sizeLotteryNumbers, i, idTicket);
 
                 if (isRandomNumberNotRepeate(currentRandomValue)) {
                     ticketNumbers[i] = currentRandomValue;
@@ -55,6 +32,15 @@ public class LotteryTicket {
                 }
             }
         }
+    }
+
+    private boolean isRandomNumberNotRepeate(int checkNumber){
+        for (int i = 0; i < ticketNumbers.length; i++) {
+            if (ticketNumbers[i] == checkNumber) {
+                return false;
+            }
+        }
+        return true;
     }
 
 
