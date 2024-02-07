@@ -34,7 +34,6 @@ public class SourceTicketNumbers {
         UserInput userInput = new UserInput();
 
         return userInput.inputInteger("Введите для билета № " + (ticketNumber + 1)  + " значение для числа № " + (currentIndex + 1) + " : ");
-
     }
 
 }
