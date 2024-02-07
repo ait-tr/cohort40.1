@@ -11,10 +11,10 @@ public class LotteryTicket {
 
     public void createAndFillTicket(int sizeTicket, int sizeLotteryNumbers){
         ticketNumbers = new int[sizeTicket];
-        fillTicket(sizeLotteryNumbers);
+        fillTicketByRandom(sizeLotteryNumbers);
     }
 
-    private void fillTicket(int sizeLotteryNumbers){
+    private void fillTicketByRandom(int sizeLotteryNumbers){
         Random random = new Random();
 
         for (int i = 0; i < ticketNumbers.length; i++) {

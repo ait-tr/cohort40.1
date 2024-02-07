@@ -28,7 +28,12 @@ public class Player {
 
     public void buyAnfFillTickets(int sizeTicket, int sizeLotteryNumbers){
         tickets = new LotteryTicket[numberTickets];
+        fillTicket(sizeTicket,sizeLotteryNumbers);
+    }
 
+
+
+    private void fillTicket(int sizeTicket, int sizeLotteryNumbers){
         for (int i = 0; i < tickets.length; i++) {
             tickets[i] = new LotteryTicket();
             tickets[i].createAndFillTicket(sizeTicket,sizeLotteryNumbers);
