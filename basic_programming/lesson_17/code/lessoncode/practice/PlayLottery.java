@@ -24,6 +24,9 @@ public class PlayLottery {
         lottery.getWinnerNumbers();
         lottery.printWinnerNumbers();
 
+        LotteryResult lotteryResult = new LotteryResult();
+        lotteryResult.checkLotteryResult(lottery, player1);
+
 
 
     }
