@@ -28,6 +28,5 @@ public class PlayLottery {
         lotteryResult.checkLotteryResult(lottery, player1);
 
 
-
     }
 }
