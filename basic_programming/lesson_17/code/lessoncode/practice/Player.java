@@ -26,14 +26,9 @@ public class Player {
         return numberTickets;
     }
 
-    public void buyAnfFillTickets(int sizeTicket, int sizeLotteryNumbers, boolean isRandom){
+    public void fillTickets(int sizeTicket, int sizeLotteryNumbers, boolean isRandom){
         tickets = new LotteryTicket[numberTickets];
-        fillTicket(sizeTicket,sizeLotteryNumbers,isRandom);
-    }
 
-
-
-    private void fillTicket(int sizeTicket, int sizeLotteryNumbers, boolean isRandom){
         for (int i = 0; i < tickets.length; i++) {
             tickets[i] = new LotteryTicket();
             tickets[i].createAndFillTicket(sizeTicket,sizeLotteryNumbers, isRandom, i);

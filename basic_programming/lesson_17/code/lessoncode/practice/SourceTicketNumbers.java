@@ -33,7 +33,7 @@ public class SourceTicketNumbers {
         // данный метод будет возвращать очередной номер для заполнения через UserInput){
         UserInput userInput = new UserInput();
 
-        return userInput.inputInteger("Введите для билета № " + ticketNumber + " значение для числа № " + (currentIndex + 1) + " : ");
+        return userInput.inputInteger("Введите для билета № " + (ticketNumber + 1)  + " значение для числа № " + (currentIndex + 1) + " : ");
 
     }
 

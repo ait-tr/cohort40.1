@@ -26,7 +26,7 @@ public class PlayLottery {
         Player player1 = new Player("123-456-789",quantityPlayerTickets);
         // в игроке мы создаем билеты (в каждом билете мы должны создать массив номеров этого билета ! номера внутри одного билета не должны повторяться)
         boolean isRandom = userInput.inputBoolean("Вы хотите купить с готовыми числами? (true / false) : ");
-        player1.buyAnfFillTickets(winnerSize,lotterySize,isRandom);
+        player1.fillTickets(winnerSize,lotterySize,isRandom);
 
         player1.printPlayerData();
 

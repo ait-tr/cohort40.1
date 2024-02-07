@@ -24,7 +24,7 @@ public class LotteryTicket {
 
             while (isNotFillCurrentNumber) {
 
-                source.receiveTicketNumber(isRandom, sizeLotteryNumbers, i, idTicket);
+                currentRandomValue = source.receiveTicketNumber(isRandom, sizeLotteryNumbers, i, idTicket);
 
                 if (isRandomNumberNotRepeate(currentRandomValue)) {
                     ticketNumbers[i] = currentRandomValue;
