@@ -1,5 +1,6 @@
 package lesson_17.code.lessoncode.practice;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Lottery {
@@ -38,6 +39,12 @@ public class Lottery {
         for (int i = 0; i < quantityWinnerNumbers; i++) {
             winnerNumbers[i] = allLotteryNumbers[i];
         }
+    }
+
+
+    public void printWinnerNumbers(){
+
+        System.out.println(Arrays.toString(winnerNumbers));
     }
 
 

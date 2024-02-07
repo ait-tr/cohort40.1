@@ -3,11 +3,15 @@ package lesson_17.code.lessoncode.practice;
 import java.util.Random;
 
 public class LotteryTicket {
-    int[] ticketNumbers;
+    private int[] ticketNumbers;
+
+    public int[] getTicketNumbers() {
+        return ticketNumbers;
+    }
 
     public void createAndFillTicket(int sizeTicket, int sizeLotteryNumbers){
         ticketNumbers = new int[sizeTicket];
-        ticketNumbers = fillTicket(sizeLotteryNumbers);
+        fillTicket(sizeLotteryNumbers);
     }
 
     private void fillTicket(int sizeLotteryNumbers){
