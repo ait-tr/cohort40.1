@@ -1,7 +1,13 @@
 package lesson_17.code.lessoncode.practice;
 
+import lesson_06.code.lessoncode.scanner.UserInput;
+
 public class PlayLottery {
     public static void main(String[] args) {
+
+        UserInput userInput = new UserInput();
+
+
         // создаем "константы" нашей лотереи: количество выигрышных номеров и размер лотереи
         int lotterySize = 36;
         int winnerSize = 5;
@@ -17,7 +23,8 @@ public class PlayLottery {
         // создаем игрока с определенным количеством билетов
         Player player1 = new Player("123-456-789",3);
         // в игроке мы создаем билеты (в каждом билете мы должны создать массив номеров этого билета ! номера внутри одного билета не должны повторяться)
-        player1.buyAnfFillTickets(winnerSize,lotterySize);
+        boolean isRandom = userInput.inputBoolean("Вы хотите купить с готовыми числами? (true / false) : ");
+        player1.buyAnfFillTickets(winnerSize,lotterySize,isRandom);
 
         player1.printPlayerData();
 

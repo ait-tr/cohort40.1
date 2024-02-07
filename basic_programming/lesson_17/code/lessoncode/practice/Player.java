@@ -26,17 +26,17 @@ public class Player {
         return numberTickets;
     }
 
-    public void buyAnfFillTickets(int sizeTicket, int sizeLotteryNumbers){
+    public void buyAnfFillTickets(int sizeTicket, int sizeLotteryNumbers, boolean isRandom){
         tickets = new LotteryTicket[numberTickets];
-        fillTicket(sizeTicket,sizeLotteryNumbers);
+        fillTicket(sizeTicket,sizeLotteryNumbers,isRandom);
     }
 
 
 
-    private void fillTicket(int sizeTicket, int sizeLotteryNumbers){
+    private void fillTicket(int sizeTicket, int sizeLotteryNumbers, boolean isRandom){
         for (int i = 0; i < tickets.length; i++) {
             tickets[i] = new LotteryTicket();
-            tickets[i].createAndFillTicket(sizeTicket,sizeLotteryNumbers);
+            tickets[i].createAndFillTicket(sizeTicket,sizeLotteryNumbers, isRandom);
             Arrays.sort(tickets[i].getTicketNumbers());
         }
     }
