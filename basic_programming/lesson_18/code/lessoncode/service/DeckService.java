@@ -24,4 +24,26 @@ public class DeckService {
         }
     }
 
+
+    public Card[] deckShuffle(Card[] deck){
+        Card[] deckShuffle = deck.clone();
+
+        // используем алгоритм Фишера-Йетса
+        // суть - проходим в обратном порядке по массиву
+        // берем очередной элемент справа
+        // из оставшихся элементов слева находим случайный индекс
+        // и меняем элемент с этим случайным индексом с нашим i-ым элементом
+        // и переходим к следующему
+
+        for (int i = deckShuffle.length - 1; i > 1 ; i--) {
+            int randomIndex = (int) (Math.random() * i);
+
+            Card tempCard = deckShuffle[i];
+            deckShuffle[i] = deckShuffle[randomIndex];
+            deckShuffle[randomIndex] = tempCard;
+        }
+
+        return deckShuffle;
+    }
+
 }
