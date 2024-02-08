@@ -49,6 +49,22 @@ public class DeckService {
         for (int i = deckShuffle.length - 1; i > 0 ; i--) {
             int randomIndex = (int) (Math.random() * i);
 
+            /*
+            в нашем случае массив от [0; 51]
+
+            берем правый элемент - № 51
+            находим случайное значение в диапазоне от 0 до 50
+            например 27 и меняем 27 элемент с 51
+
+            далее берем 50 элемент
+            находим случайное значение в диапазоне от 0 до 49
+            например 13 и меняем 13 элемент с 50
+
+            ...
+
+            когда мы дойдем до элемента 27
+             */
+
             Card tempCard = deckShuffle[i];
             deckShuffle[i] = deckShuffle[randomIndex];
             deckShuffle[randomIndex] = tempCard;
