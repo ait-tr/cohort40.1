@@ -17,6 +17,14 @@ public class Card {
         return suit;
     }
 
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public void setSuit(String suit) {
+        this.suit = suit;
+    }
+
     @Override
     public String toString() {
         return "Card{" +

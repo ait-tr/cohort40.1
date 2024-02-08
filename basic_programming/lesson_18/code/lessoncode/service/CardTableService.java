@@ -25,4 +25,13 @@ public class CardTableService {
             }
         }
     }
+
+    public void removeCardsFromDeck(Card[] deck, int numberCardForEachPlayer, int numberPlayers){
+        int numberCardsForRemove = numberCardForEachPlayer * numberPlayers;
+
+        for (int i = 0; i < numberCardsForRemove; i++) {
+         deck[i].setSuit(".");
+         deck[i].setValue(".");
+        }
+    }
 }

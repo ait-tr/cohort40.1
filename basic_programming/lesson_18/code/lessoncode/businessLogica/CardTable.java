@@ -42,6 +42,18 @@ public class CardTable {
 
         printService.printPlayers(players);
 
+        printService.printDeck(deckShuffle,"колода карт после раздачи игрокам");
+
+        tableService.removeCardsFromDeck(deckShuffle,5, players.length);
+
+        printService.printDeck(deckShuffle,"колода карт после раздачи и удаления карт из колоды");
+
+
+        System.out.println("ПОСМОТРИМ ЕЩЕ РАЗ НА КАРТЫ ИГРОКОВ!");
+
+        printService.printPlayers(players);
+
+
     }
 
 
