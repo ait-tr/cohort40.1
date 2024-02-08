@@ -4,6 +4,7 @@ import lesson_18.code.lessoncode.entity.Card;
 
 public class DeckService {
 
+
     public void fillDeck(Card[] deck){
 
 //        Card card1 = new Card("2","♠️");
@@ -28,6 +29,16 @@ public class DeckService {
     public Card[] deckShuffle(Card[] deck){
         Card[] deckShuffle = deck.clone();
 
+        // .clone() осуществляет КОПИРОВАНИЕ значений из одного массива в другой
+        // если элемент массива - это примитивные типы, то копируется значения
+        // если элемент массива - ссылка, то копируется ссылка
+        // НО НЕ СОЗДАЕТСЯ ДУБЛИКАТ ОБЪЕКТА на который ссылка указывает
+
+
+        //        for (int i = 0; i < deck.length; i++) {
+        //            deckShuffle[i] = deck[i];
+        //        }
+
         // используем алгоритм Фишера-Йетса
         // суть - проходим в обратном порядке по массиву
         // берем очередной элемент справа
@@ -35,7 +46,7 @@ public class DeckService {
         // и меняем элемент с этим случайным индексом с нашим i-ым элементом
         // и переходим к следующему
 
-        for (int i = deckShuffle.length - 1; i > 1 ; i--) {
+        for (int i = deckShuffle.length - 1; i > 0 ; i--) {
             int randomIndex = (int) (Math.random() * i);
 
             Card tempCard = deckShuffle[i];
