@@ -29,9 +29,10 @@ public class CardTableService {
     public void removeCardsFromDeck(Card[] deck, int numberCardForEachPlayer, int numberPlayers){
         int numberCardsForRemove = numberCardForEachPlayer * numberPlayers;
 
+        Card emptyCard = new Card("","");
+
         for (int i = 0; i < numberCardsForRemove; i++) {
-         deck[i].setSuit(".");
-         deck[i].setValue(".");
+        deck[i] = emptyCard;
         }
     }
 }

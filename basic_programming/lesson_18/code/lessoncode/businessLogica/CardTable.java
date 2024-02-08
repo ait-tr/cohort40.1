@@ -53,6 +53,8 @@ public class CardTable {
 
         printService.printPlayers(players);
 
+        printService.printDeck(cardDeck.getDeck(), "первоначальная колода");
+
 
     }
 
