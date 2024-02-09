@@ -1,5 +1,6 @@
 package lesson_19.code.lessoncode.incapsulation.hr;
 
+import lesson_19.code.lessoncode.incapsulation.hr.entity.Department;
 import lesson_19.code.lessoncode.incapsulation.hr.repositories.ApplicantRepository;
 import lesson_19.code.lessoncode.incapsulation.hr.repositories.DepartmentRepository;
 import lesson_19.code.lessoncode.incapsulation.hr.repositories.EmployeeRepository;
@@ -23,8 +24,10 @@ public class HrApp {
 //        System.out.println(employeeRepository);
 //        System.out.println(applicantRepository);
 
+        Department[] departments = departmentRepository.getDepartments();
 
-
+        applicantService.addNewApplicant(departments[0]);
+        System.out.println(applicantRepository);
 
     }
 }

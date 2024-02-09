@@ -24,7 +24,15 @@ public class ApplicantRepository {
     - delete
      */
 
-    public void add(Applicant applicant){}
+    public void add(Applicant applicant){
+        for (int i = 0; i < applicants.length; i++) {
+            if (applicants[i] == null) {
+                applicants[i] = applicant;
+                break;
+            }
+            System.out.println("База данных переполненна!");
+        }
+    }
 
     public Applicant findByName(String name){
         return null;
