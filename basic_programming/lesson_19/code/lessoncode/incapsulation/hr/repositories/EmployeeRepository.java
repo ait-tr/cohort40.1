@@ -10,8 +10,8 @@ public class EmployeeRepository {
 
     Employee[] employees;
 
-    public EmployeeRepository() {
-        this.employees = new Employee[10];
+    public EmployeeRepository(int quantity) {
+        this.employees = new Employee[quantity];
     }
 
     public Employee[] getEmployees() {

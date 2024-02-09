@@ -9,8 +9,8 @@ public class DepartmentRepository {
 
     Department[] departments;
 
-    public DepartmentRepository() {
-        this.departments = new Department[3];
+    public DepartmentRepository(int number) {
+        this.departments = new Department[number];
     }
 
     public Department[] getDepartments() {
