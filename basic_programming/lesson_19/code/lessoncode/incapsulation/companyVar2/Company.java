@@ -24,6 +24,10 @@ public class Company {
 
 
         departments[0].getEmployees()[0] = employees[0];
+
+//        Employee[] currentEmployees = departments[0].getEmployees();
+//        currentEmployees[0] = employees[0];
+//
         departments[0].getEmployees()[1] = employees[1];
         departments[1].getEmployees()[0] = employees[2];
         departments[2].getEmployees()[0] = employees[3];
