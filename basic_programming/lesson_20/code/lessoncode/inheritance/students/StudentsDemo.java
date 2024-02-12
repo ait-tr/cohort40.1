@@ -26,5 +26,8 @@ public class StudentsDemo {
         seniorDeveloper.mentoring();
         seniorDeveloper.solveProblem();
 
+
+        Mentor mentor = new Mentor();
+
     }
 }
