@@ -22,12 +22,12 @@ public class AgreementEmployee extends Employee{
     WorkingHoursRecord[] personalWorkingHoursArray = getWorkingHoursRecords();
         for (int i = 0; i < personalWorkingHoursArray.length; i++) {
             WorkingHoursRecord currentRecord = personalWorkingHoursArray[i];
+            double workingTimeInterval = (currentRecord.getFinishedTime().getTime() - currentRecord.getStartTime().getTime()) / 60000;
             currentRecord.setHoursWorked(
-                    (double) (currentRecord.getFinishedTime().getTime() - currentRecord.getStartTime().getTime()) / 60000
-                    );
+                    (double) (workingTimeInterval));
 
 
-            setTotalHoursByPeriod(getTotalHoursByPeriod() + currentRecord.getHoursWorked());
+            setTotalHoursByPeriod(getTotalHoursByPeriod() + workingTimeInterval);
         }
     }
 }
