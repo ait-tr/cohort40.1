@@ -1,0 +1,37 @@
+Написать приложение для учета рабочего времени сотрудников:
+
+1) Сотрудники:
+ - может быть в штате компании
+ - может работать по договору (оплата по часам)
+2) Нужно обеспечить ввод данных о сотрудниках (с возможностью подключения альтернативного источника данных)
+3) Нужно корректировать рабочее время сотрудника
+4) Вывод информации о сотрудниках на экран
+
+=============================================
+
+Класс - WorkingHoursRecord
+- Date date;
+- int hoursWorked;
+- Date startTime;
+- Date finishedTime;
+
+
+
+Класс Сотрудник - абстрактный класс
+- String name
+- String personalCode
+- String position
+- WorkingHoursRecord[] workingHoursRecords <- 365 элементов сразу создаем
+- totalHoursByPeriod;
+
+
+Класс - ContractedEmployee
+- double salaryPerMount;
+- String vacationPeriod;
+- double hoursByContract;
+
+
+Класс - AgreementEmployee
+- double hourlyRate;
+
+
