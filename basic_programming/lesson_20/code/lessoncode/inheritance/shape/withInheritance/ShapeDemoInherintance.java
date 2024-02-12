@@ -15,17 +15,21 @@ public class ShapeDemoInherintance {
         Rectangle rectangle3 = new Rectangle("Rectangle 3", 25, 17);
 
 
-        Shape[] shapes = {circle1,circle2,circle3,square1,square2,square3,rectangle1, rectangle2, rectangle3};
+        Triangle triangle1 = new Triangle("Triangle 1", 3, 4, 5);
+        Triangle triangle2 = new Triangle("Triangle 2", 10, 12,15);
+        Triangle triangle3 = new Triangle("Triangle 3", 25, 17,21);
 
 
+        Shape[] shapes = {circle1,circle2,circle3,square1,square2,square3,rectangle1, rectangle2, rectangle3, triangle1, triangle2,triangle3};
 
-        double allAreas = 0;
+
+        double allPerimeters = 0;
 
         for (int i = 0; i < shapes.length; i++) {
-            allAreas = allAreas + shapes[i].calculatorArea();
+            allPerimeters = allPerimeters + shapes[i].calculatorPerimeter();
         }
 
-        System.out.println("площадь всех фигур = " + allAreas);
+        System.out.println("периметр всех фигур = " + allPerimeters);
 
     }
 }
