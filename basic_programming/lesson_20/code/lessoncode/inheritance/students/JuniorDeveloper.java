@@ -6,4 +6,8 @@ public class JuniorDeveloper extends Student{
         System.out.println("Coding like a junior dev");
     }
 
+    void specialForMentor(){
+        System.out.println("!!!!!!!");
+    }
+
 }

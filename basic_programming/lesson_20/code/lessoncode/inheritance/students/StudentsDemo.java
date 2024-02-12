@@ -28,6 +28,7 @@ public class StudentsDemo {
 
 
         Mentor mentor = new Mentor();
-
+        mentor.debug();
+        mentor.specialForMentor();
     }
 }
