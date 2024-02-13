@@ -5,23 +5,19 @@ import lesson_21.code.lessoncode.taskPractice.interfaces.GearShiftOperations;
 
 public class NonMotorizedVehicle extends Vehicle  {
 
-    private Engine engine;
-    private GearShift gearShift;
 
-    public NonMotorizedVehicle(String model, Integer speed, Engine engine, GearShift gearShift) {
+    public NonMotorizedVehicle(String model, Integer speed) {
         super(model, speed);
-        this.engine = engine;
-        this.gearShift = gearShift;
     }
 
     @Override
-    void accelerate() {
+    public void accelerate() {
         setSpeed(getSpeed() + 10);
         System.out.println("Accelerate. Current speed: " + getSpeed());
     }
 
     @Override
-    void brake() {
+    public void brake() {
         if (getSpeed() > 10) {
             setSpeed(getSpeed() - 10);
             System.out.println("Brake. Current speed: " + getSpeed());

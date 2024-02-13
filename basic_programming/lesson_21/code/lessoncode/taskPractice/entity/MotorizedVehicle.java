@@ -15,13 +15,13 @@ public class MotorizedVehicle extends Vehicle implements EngineOperations, GearS
     }
 
     @Override
-    void accelerate() {
+    public void accelerate() {
         setSpeed(getSpeed() + 10);
         System.out.println("Accelerate. Current speed: " + getSpeed());
     }
 
     @Override
-    void brake() {
+    public void brake() {
         if (getSpeed() > 10) {
             setSpeed(getSpeed() - 10);
             System.out.println("Brake. Current speed: " + getSpeed());

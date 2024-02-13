@@ -8,9 +8,9 @@ import lesson_21.code.lessoncode.taskPractice.interfaces.GearShiftOperations;
 public class BiCycle extends NonMotorizedVehicle implements GearShiftOperations {
     private GearShift gearShift;
 
-    public BiCycle(String model, Integer speed, Engine engine, GearShift gearShift) {
-        super(model, speed, engine, gearShift);
-
+    public BiCycle(String model, Integer speed, GearShift gearShift) {
+        super(model, speed);
+        this.gearShift = gearShift;
     }
 
     @Override
