@@ -25,7 +25,8 @@ public class MusicianDemo {
                 new PopMusician(),
                 new RockMusician(),
                 new PopMusician(),
-                new RockMusician()
+                new RockMusician(),
+                new FolkSing()
         };
 
         Dancer[] dancers = {
@@ -46,6 +47,12 @@ public class MusicianDemo {
       service.singAll(singers);
       service.danceAll(dancers);
 
+        System.out.println("===============");
+
+        Musician[] musicians = {new PopMusician(), new RockMusician(), new PopMusician()};
+
+        service.singAll(musicians);
 
     }
+
 }
