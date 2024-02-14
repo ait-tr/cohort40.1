@@ -65,56 +65,5 @@ public interface Vehicle {
 }
 ```
 
-### Статические методы
-
-Интерфейсы могут содержать статические методы с реализацией, которые могут быть вызваны без объекта интерфейса.
-
-```java
-public interface Vehicle {
-    static void horn() {
-        System.out.println("Гудок!");
-    }
-}
-```
-
-### Функциональные интерфейсы
-
-Функциональный интерфейс - это интерфейс с одним абстрактным методом. Они используются в лямбда-выражениях и аннотируются как `@FunctionalInterface`.
-
-```java
-@FunctionalInterface
-public interface Greeting {
-    void sayHello(String name);
-}
-```
-
-Использование:
-
-```java
-Greeting greeting = name -> System.out.println("Привет, " + name);
-greeting.sayHello("Мир");
-```
-
-### Приватные методы
-
-С Java 9, интерфейсы могут содержать приватные методы, которые помогают скрыть детали реализации.
-
-```java
-public interface Loggable {
-    default void logInfo(String message) {
-        log("INFO", message);
-    }
-
-    default void logError(String message) {
-        log("ERROR", message);
-    }
-
-    // Приватный метод в интерфейсе
-    private void log(String level, String message) {
-        System.out.println(level + ": " + message);
-    }
-}
-```
-
 Эти примеры иллюстрируют ключевые аспекты работы с интерфейсами в Java, показывая их гибкость и мощь в создании абстракций и структурировании кода.
 
