@@ -6,4 +6,8 @@
 ================
 
 класс Good
--
+- int id
+- String catalogNumber
+- String goodName;
+- String producer
+
