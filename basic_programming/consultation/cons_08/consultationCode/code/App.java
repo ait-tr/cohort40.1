@@ -32,5 +32,7 @@ public class App {
 
         warehouse.showAllGoods();
 
+        System.out.println(warehouse.findById(4));
+
     }
 }

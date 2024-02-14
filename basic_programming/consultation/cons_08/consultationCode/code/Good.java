@@ -46,4 +46,15 @@ abstract class Good {
 //        this.isPresent = true; // или false в результате проверки склада
 
 
+    @Override
+    public String toString() {
+        return "Good{" +
+                "id=" + id +
+                ", catalogNumber='" + catalogNumber + '\'' +
+                ", goodName='" + goodName + '\'' +
+                ", producer='" + producer + '\'' +
+                ", isPresent=" + isPresent +
+                ", goodCategory='" + goodCategory + '\'' +
+                '}';
+    }
 }

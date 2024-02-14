@@ -9,4 +9,6 @@ public class AutoDetails extends Good{
     void checkGoodOnWarehouse() {
 
     }
+
+
 }
