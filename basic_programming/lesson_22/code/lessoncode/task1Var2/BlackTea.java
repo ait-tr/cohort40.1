@@ -6,5 +6,8 @@ public class BlackTea extends Tea{
         super(teaId, teaProducer, teaName, "Black");
     }
 
+    public void temp(){
+        System.out.println("Температура заваривания 90 градусов");
+    }
 
 }

@@ -6,4 +6,8 @@ public class HerbalTea extends Tea{
 
         super(teaId, teaProducer, teaName, "Herbal");
     }
+
+    public void time(){
+        System.out.println("Время заваривания 20 минут");
+    }
 }

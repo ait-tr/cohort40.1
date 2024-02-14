@@ -96,6 +96,7 @@ public class TeaCollection {
                 System.out.println("Производитель " + teas[i].getTeaProducer().getProducerName());
                 System.out.println("Название " + teas[i].getTeaName());
                 System.out.println("Тип чая: " + teas[i].getTeaType());
+
             } else {
                 System.out.println("Пустая ячейка массива");
             }
