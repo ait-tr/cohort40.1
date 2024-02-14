@@ -60,9 +60,7 @@ public class TextUtil {
                     reversed[j + 1] = tempWord;
                 }
             }
-
         }
-
         return reversed;
     }
 
