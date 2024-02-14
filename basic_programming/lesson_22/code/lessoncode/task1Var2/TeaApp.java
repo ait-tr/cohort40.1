@@ -12,16 +12,16 @@ public class TeaApp {
         TeaProducer teaProducer4 = new TeaProducer("Askold");
 
 
-        Tea tea1 = new BlackTea(1,teaProducer1,"Limon");
-        Tea tea2 = new GreenTea(2,teaProducer1,"Apple");
-        Tea tea3 = new HerbalTea(3,teaProducer2,"Melon");
-        Tea tea4 = new BlackTea(4,teaProducer3,"Black Earl Grey");
-        Tea tea5 = new HerbalTea(5,teaProducer4,"Herbal");
-        Tea tea6 = new GreenTea(6,teaProducer2,"Green + Mint");
-        Tea tea7 = new GreenTea(7,teaProducer4,"Japan Cherry");
-        Tea tea8 = new HerbalTea(8,teaProducer1,"Carkade");
+        BlackTea tea1 = new BlackTea(1,teaProducer1,"Limon");
+        GreenTea tea2 = new GreenTea(2,teaProducer1,"Apple");
+        HerbalTea tea3 = new HerbalTea(3,teaProducer2,"Melon");
+        BlackTea tea4 = new BlackTea(4,teaProducer3,"Black Earl Grey");
+        HerbalTea tea5 = new HerbalTea(5,teaProducer4,"Herbal");
+        GreenTea tea6 = new GreenTea(6,teaProducer2,"Green + Mint");
+        GreenTea tea7 = new GreenTea(7,teaProducer4,"Japan Cherry");
+        HerbalTea tea8 = new HerbalTea(8,teaProducer1,"Carkade");
 
-        Tea teaAdd = new BlackTea(9,teaProducer3,"English breakfast");
+        BlackTea teaAdd = new BlackTea(9,teaProducer3,"English breakfast");
 
 
         TeaCollection teaCollection = new TeaCollection(10);

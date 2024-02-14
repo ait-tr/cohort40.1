@@ -28,4 +28,14 @@ abstract class Tea {
     public String getTeaType() {
         return teaType;
     }
+
+    @Override
+    public String toString() {
+        return "Tea{" +
+                "teaId=" + teaId +
+                ", teaProducer=" + teaProducer +
+                ", teaName='" + teaName + '\'' +
+                ", teaType='" + teaType + '\'' +
+                '}';
+    }
 }
