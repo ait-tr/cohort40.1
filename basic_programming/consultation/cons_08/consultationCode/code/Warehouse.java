@@ -4,6 +4,7 @@ public class Warehouse {
 
     private Good[] goods;
     private int indexNull = -1;
+    Validation validation = new Validation();
 
     public Warehouse(int warehouseSize) {
         this.goods = new Good[warehouseSize];
@@ -18,8 +19,10 @@ public class Warehouse {
     }
 
     public int add(Good newGood){
+        if (validation.checkGoodParameters(newGood)) {
         indexNull++;
-        goods[indexNull] = newGood;
+        goods[indexNull] = newGood;}
+
         return indexNull;
     }
 
