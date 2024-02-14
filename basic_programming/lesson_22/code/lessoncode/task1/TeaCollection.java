@@ -103,6 +103,11 @@ public class TeaCollection {
         for (int i = 0; i < teas.length; i++) {
             if (teas[i] != null) {
                 System.out.println("№ " + teas[i].getTeaId());
+
+//                Tea currentTea = teas[i];
+//                TeaProducer teaProducer = currentTea.getTeaProducer();
+//                String teaProducerName = teaProducer.getProducerName();
+
                 System.out.println("Производитель " + teas[i].getTeaProducer().getProducerName());
                 System.out.println("Название " + teas[i].getTeaName());
                 System.out.println("Тип чая: " + teas[i].getTeaTypes().getTeaTypes()[teas[i].getIndexArrayTeaType()]);

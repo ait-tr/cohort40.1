@@ -26,12 +26,24 @@ public class TeaApp {
         TeaCollection teaCollection = new TeaCollection(10);
 
         teaCollection.add(tea1);
+        teaCollection.add(tea2);
+        teaCollection.add(tea3);
+        teaCollection.add(tea4);
+        teaCollection.add(tea5);
+        teaCollection.add(tea6);
+        teaCollection.add(tea7);
+        teaCollection.add(tea8);
+
 
         teaCollection.printCollection();
 
+        teaCollection.delete(tea5);
 
+        teaCollection.add(teaAdd);
+        teaCollection.printCollection();
 
-
+        System.out.println(teaCollection.findById(9));
+        System.out.println(teaCollection.findByName("Melon"));
 
     }
 }
