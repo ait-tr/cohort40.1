@@ -6,7 +6,7 @@ public class Car extends Vehicle{
     }
 
     @Override
-    void showInfo() {
+    public void showInfo() {
         System.out.println("Car: VIN = " + getVin() + " " + getBrand() + " " + getModel() + " (" + getYear() + ")");
     }
 }

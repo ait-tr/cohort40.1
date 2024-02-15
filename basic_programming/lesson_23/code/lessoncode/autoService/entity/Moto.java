@@ -14,7 +14,7 @@ public class Moto extends Vehicle{
     }
 
     @Override
-    void showInfo() {
+    public void showInfo() {
         System.out.println("Moto:  VIN = " + getVin() + " " + getBrand() + " " + getModel() + " (" + getYear() + ")" + " " + getStileType());
     }
 }

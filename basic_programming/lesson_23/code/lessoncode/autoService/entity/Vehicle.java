@@ -13,7 +13,7 @@ public abstract class Vehicle {
         this.year = year;
     }
 
-    abstract void showInfo();
+    public abstract void showInfo();
 
     public String getVin() {
         return vin;
