@@ -10,8 +10,8 @@ public class ServiceApp {
         manager.addVehicle(car);
         manager.addVehicle(truck);
 
-        manager.assignService(car, "Oil change");
-        manager.assignService(truck,"Brake replacement");
+        manager.assignService(car, "Repair: Oil change");
+        manager.assignService(truck,"Repair: Brake replacement");
 
         manager.printServiceStatus(0);
 

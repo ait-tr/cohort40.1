@@ -1,5 +1,7 @@
 package lesson_23.code.lessoncode.autoService;
 
+import java.util.Arrays;
+
 public class ServiceManager {
     // размер количества автомобилей на одновременном ремонте
     private Vehicle[] vehicles = new Vehicle[10];
@@ -26,11 +28,11 @@ public class ServiceManager {
 
         if (serviceCounter < serviceables.length) {
 
-            if (workDescription.contains("repair")) {
+            if (workDescription.toLowerCase().contains("repair")) {
                 serviceables[serviceCounter] = new Repair(workDescription);
             }
 
-            if (workDescription.contains("paint")) {
+            if (workDescription.toLowerCase().contains("paint")) {
                 serviceables[serviceCounter] = new Painted(workDescription);
             }
 
