@@ -5,7 +5,7 @@ public class ServiceManager {
     private Vehicle[] vehicles = new Vehicle[10];
 
     // размер работ
-    Serviceable[] serviceables = new Serviceable[10];
+    private Serviceable[] serviceables = new Serviceable[10];
 
     private int vehicleCounter = 0;
     private int serviceCounter = 0;
