@@ -1,13 +1,13 @@
-package lesson_23.code.lessoncode.autoService;
+package lesson_23.code.lessoncode.autoService.service;
 
-public class Repair implements Serviceable{
+public class Painted implements Serviceable {
 
     private String typeWorkDescription;
     private String workStatus;
 
-    public Repair(String typeWorkDescription) {
+    public Painted(String typeWorkDescription) {
         this.typeWorkDescription = typeWorkDescription;
-        this.workStatus = "Assigned";
+        this.workStatus = "Start painting";
     }
 
     @Override

@@ -1,5 +1,9 @@
 package lesson_23.code.lessoncode.autoService;
 
+import lesson_23.code.lessoncode.autoService.entity.Car;
+import lesson_23.code.lessoncode.autoService.entity.Truck;
+import lesson_23.code.lessoncode.autoService.service.ServiceManager;
+
 public class ServiceApp {
     public static void main(String[] args) {
         ServiceManager manager = new ServiceManager();

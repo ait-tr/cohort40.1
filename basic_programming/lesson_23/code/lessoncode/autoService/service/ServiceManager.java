@@ -1,6 +1,6 @@
-package lesson_23.code.lessoncode.autoService;
+package lesson_23.code.lessoncode.autoService.service;
 
-import java.util.Arrays;
+import lesson_23.code.lessoncode.autoService.entity.Vehicle;
 
 public class ServiceManager {
     // размер количества автомобилей на одновременном ремонте

@@ -1,4 +1,4 @@
-package lesson_23.code.lessoncode.autoService;
+package lesson_23.code.lessoncode.autoService.entity;
 
 public class Moto extends Vehicle{
 

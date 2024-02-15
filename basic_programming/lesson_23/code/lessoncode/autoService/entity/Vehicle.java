@@ -1,6 +1,6 @@
-package lesson_23.code.lessoncode.autoService;
+package lesson_23.code.lessoncode.autoService.entity;
 
-abstract class Vehicle {
+public abstract class Vehicle {
     private String vin;
     private String brand;
     private String model;
