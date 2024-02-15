@@ -19,4 +19,9 @@ public class Painted implements Serviceable{
     public String getWorkStatus() {
         return typeWorkDescription + " - " + workStatus;
     }
+
+    @Override
+    public void changeWorkStatus(String newStatus) {
+        workStatus = newStatus;
+    }
 }
