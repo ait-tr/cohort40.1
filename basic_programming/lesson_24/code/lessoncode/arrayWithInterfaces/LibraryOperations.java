@@ -6,11 +6,20 @@ public class LibraryOperations {
 
     BookRepository bookRepository = new BookRepository(5);
 
+    MagazineRepository magazineRepository = new MagazineRepository(5);
+
     public void operations(){
-        bookRepository.fillRepositoryByUser();
+        bookRepository.fill();
 
         for (int i = 0; i < bookRepository.books.length; i++) {
             bookRepository.books[i].printInfo();
         }
+
+        magazineRepository.fill();
+
+        for (int i = 0; i < magazineRepository.magazines.length; i++) {
+            magazineRepository.magazines[i].printInfo();
+        }
+
     }
 }
