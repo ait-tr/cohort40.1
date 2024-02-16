@@ -12,6 +12,6 @@ public class Library {
 
         MagazineRepository magazineRepository = new MagazineRepository(5);
         LibraryOperationUseInterface louiM = new LibraryOperationUseInterface(magazineRepository);
-louiM.operations();
+        louiM.operations();
     }
 }
