@@ -4,7 +4,6 @@ import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class ComputerShop {
     public static void main(String[] args) {
-
         UserInput ui = new UserInput();
 
         Sklad sklad = new Sklad();
@@ -12,7 +11,6 @@ public class ComputerShop {
         SkladOperations skladOperations = new SkladOperations();
 
         skladOperations.operations(ui,sklad);
-
 
     }
 }
