@@ -29,7 +29,8 @@ public class Company {
 
 
         for (int i = 0; i < employees.length; i++) {
-            System.out.println(employees[i].name);
+            System.out.println("Наш сотрудник: ");
+            System.out.print(employees[i].name);
         }
 
     }
