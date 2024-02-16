@@ -1,4 +1,4 @@
-package lesson_24.code.lessoncode;
+package lesson_24.code.lessoncode.arrays;
 
 public class Employee {
     int id;

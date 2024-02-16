@@ -1,4 +1,4 @@
-package lesson_24.code.lessoncode;
+package lesson_24.code.lessoncode.arrays;
 
 public class Company {
     public static void main(String[] args) {
@@ -29,8 +29,8 @@ public class Company {
 
 
         for (int i = 0; i < employees.length; i++) {
-            System.out.println("Наш сотрудник: ");
-            System.out.print(employees[i].name);
+            System.out.print("Наш сотрудник: ");
+            System.out.println(employees[i].name);
         }
 
     }
