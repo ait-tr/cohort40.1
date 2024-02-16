@@ -11,14 +11,14 @@ public class LibraryOperations {
     public void operations(){
         bookRepository.fill();
 
-        for (int i = 0; i < bookRepository.books.length; i++) {
-            bookRepository.books[i].printInfo();
+        for (int i = 0; i < bookRepository.getItems().length; i++) {
+            bookRepository.printInfo();
         }
 
         magazineRepository.fill();
 
         for (int i = 0; i < magazineRepository.magazines.length; i++) {
-            magazineRepository.magazines[i].printInfo();
+            magazineRepository.magazines[i].printMagazine();
         }
 
     }

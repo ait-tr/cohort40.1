@@ -18,14 +18,12 @@ public class Book extends LibraryItem{
         return genre;
     }
 
-    @Override
-    void printInfo() {
+    void printBook() {
         System.out.println("Книга:");
         System.out.println("Название: " + getTitle());
         System.out.println("Автор: " + author);
         System.out.println("Жанр: " + genre);
         System.out.println("Год выпуска: " + getYear());
-
 
     }
 

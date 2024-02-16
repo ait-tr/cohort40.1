@@ -9,8 +9,6 @@ abstract class LibraryItem {
         this.year = year;
     }
 
-    abstract void printInfo();
-
     public String getTitle() {
         return title;
     }

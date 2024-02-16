@@ -13,8 +13,8 @@ public class Magazine extends LibraryItem{
         return issuedNumber;
     }
 
-    @Override
-    void printInfo() {
+
+    void printMagazine() {
             System.out.println("Журнал:");
             System.out.println("Название: " + getTitle());
             System.out.println("Номер выпуска: " + getIssuedNumber());

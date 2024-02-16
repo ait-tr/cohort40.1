@@ -2,7 +2,7 @@ package lesson_24.code.lessoncode.arrayWithInterfaces;
 
 import lesson_06.code.lessoncode.scanner.UserInput;
 
-public class MagazineRepository {
+public class MagazineRepository implements LibraryRepository{
 
     Magazine[] magazines;
 
@@ -10,7 +10,7 @@ public class MagazineRepository {
         this.magazines = new Magazine[magazinesQuantity];
     }
 
-
+    @Override
     public void fill(){
         magazines[0] = new Magazine("Журнал1", 2000, "1");
         magazines[1] = new Magazine("Журнал2", 2001, "3");
@@ -18,6 +18,18 @@ public class MagazineRepository {
         magazines[3] = new Magazine("Журнал1", 2003, "12");
         magazines[4] = new Magazine("Журнал3", 2004, "25");
 
+    }
+
+    @Override
+    public LibraryItem[] getItems() {
+        return magazines;
+    }
+
+    @Override
+    public void printInfo() {
+        for (int i = 0; i < magazines.length; i++) {
+            magazines[i].printMagazine();
+        }
     }
 
     public void fillRepository() {
