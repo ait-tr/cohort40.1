@@ -1,5 +1,10 @@
 DRY - Don't repeat yourself! - не повторяйся!
 
+single source of truth - SSOT
+
+
+
+
 KISS -
 Keep it simple, stupid!
 Keep it stupid simple!  - сделай проще
@@ -11,4 +16,13 @@ SOLID
 - Liskov substitution principle - принцип подстановки Лисков
 - Interface segregation principle - принцип разделения интерфейса
 - Dependency inversion principle - принцип инверсии зависимостей
+
+
+YAGNI - You ain't gonna need it - вам это не понадобится!
+
+AGILE разработка
+
+SoC - Separation of Concerns - разделение ответственности
+
+
 
