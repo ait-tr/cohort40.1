@@ -1,0 +1,14 @@
+DRY - Don't repeat yourself! - не повторяйся!
+
+KISS -
+Keep it simple, stupid!
+Keep it stupid simple!  - сделай проще
+
+
+SOLID
+- single responsibility principle - принцип единой ответственности
+- open-close principle - принцип открытости/закрытости
+- Liskov substitution principle - принцип подстановки Лисков
+- Interface segregation principle - принцип разделения интерфейса
+- Dependency inversion principle - принцип инверсии зависимостей
+
