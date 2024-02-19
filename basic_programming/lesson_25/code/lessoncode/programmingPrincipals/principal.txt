@@ -3,8 +3,6 @@ DRY - Don't repeat yourself! - не повторяйся!
 single source of truth - SSOT
 
 
-
-
 KISS -
 Keep it simple, stupid!
 Keep it stupid simple!  - сделай проще
