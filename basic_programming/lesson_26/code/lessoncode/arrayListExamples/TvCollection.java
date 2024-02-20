@@ -47,8 +47,9 @@ public class TvCollection {
 
     private static TV findFirstTvByManufacturer(ArrayList<TV> tvList, String manufacturer){
         for (int i = 0; i < tvList.size(); i++) {
-            if (tvList.get(i).getManufacturer().equals(manufacturer)) {
-                return tvList.get(i);
+            TV currentTvFromCollection = tvList.get(i);
+            if (currentTvFromCollection.getManufacturer().equals(manufacturer)) {
+                return currentTvFromCollection;
             }
         }
         return null;
