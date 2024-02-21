@@ -1,6 +1,7 @@
 # План на урок
 
 1. ENUM
-2. SOLID
-3. Коллекции
+2. static & final
+3. SOLID
+
 
