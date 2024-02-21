@@ -8,7 +8,7 @@ public class Course {
     private String courseId;
     private String name;
     private Teacher teacher;
-    private List<Student> students;
+    private ArrayList<Student> students;
 
     public Course(String courseId, String name, Teacher teacher) {
         this.courseId = courseId;

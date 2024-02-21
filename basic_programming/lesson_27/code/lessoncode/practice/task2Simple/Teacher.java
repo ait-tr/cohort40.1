@@ -1,7 +1,4 @@
-package lesson_27.code.lessoncode.practice.task2Simple.task2;
-
-import java.util.ArrayList;
-import java.util.List;
+package lesson_27.code.lessoncode.practice.task2Simple;
 
 public class Teacher {
     private String teacherId;

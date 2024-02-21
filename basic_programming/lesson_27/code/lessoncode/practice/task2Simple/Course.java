@@ -1,6 +1,5 @@
-package lesson_27.code.lessoncode.practice.task2Simple.task2;
+package lesson_27.code.lessoncode.practice.task2Simple;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

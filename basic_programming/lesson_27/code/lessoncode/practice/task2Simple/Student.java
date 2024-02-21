@@ -1,4 +1,4 @@
-package lesson_27.code.lessoncode.practice.task2Simple.task2;
+package lesson_27.code.lessoncode.practice.task2Simple;
 
 public class Student {
     private String studentId;
