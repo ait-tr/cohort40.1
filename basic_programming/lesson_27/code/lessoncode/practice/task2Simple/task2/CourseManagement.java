@@ -18,6 +18,25 @@ public class CourseManagement {
         courses.add(course3);
         courses.add(course4);
 
+        // создать коллекцию курсов для каждого преподавателя
+
+        ArrayList<Course> coursesForTeacher1 = new ArrayList<>();
+        for (Course course : courses){
+            if (course.getTeacher().getName().equals(teacher1.getName())){
+               coursesForTeacher1.add(course);
+            }
+        }
+
+
+        ArrayList<Course> coursesForTeacher2 = new ArrayList<>();
+        for (Course course : courses){
+            if (course.getTeacher().getName().equals(teacher2.getName())){
+                coursesForTeacher2.add(course);
+            }
+        }
+
+
+
 
         Student student1 = new Student("S1", "Student 1");
         Student student2 = new Student("S2", "Student 2");
@@ -47,19 +66,21 @@ public class CourseManagement {
         }
 
         System.out.println("Курсы, которые ведет " + teacher1.getName() + " : ");
-        for (Course course : courses){
-            if (course.getTeacher().getName().equals(teacher1.getName())){
-                System.out.println(course.getName());
-            }
-        }
+        System.out.println(coursesForTeacher1);
+//        for (Course course : courses){
+//            if (course.getTeacher().getName().equals(teacher1.getName())){
+//                System.out.println(course.getName());
+//            }
+//        }
 
         System.out.println("Курсы, которые ведет " + teacher2.getName() + " : ");
+        System.out.println(coursesForTeacher2);
 
-        for (Course course : courses){
-            if (course.getTeacher().getName().equals(teacher2.getName())){
-                System.out.println(course.getName());
-            }
-        }
+//        for (Course course : courses){
+//            if (course.getTeacher().getName().equals(teacher2.getName())){
+//                System.out.println(course.getName());
+//            }
+//        }
 
     }
 }

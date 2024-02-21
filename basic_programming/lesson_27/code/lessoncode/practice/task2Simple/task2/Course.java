@@ -38,7 +38,13 @@ public class Course {
         return students;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "Course{" +
+                "courseId='" + courseId + '\'' +
+                ", name='" + name + '\'' +
+                ", teacher=" + teacher +
+                ", students=" + students +
+                '}';
+    }
 }
