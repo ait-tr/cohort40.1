@@ -6,3 +6,14 @@
 
 3) создайте коллекцию всех отделов
 
+=================================
+
+класс Employee
+- Integer personalCode
+- String name
+- Department department
+
+
+класс Department
+- String departmentName
+
