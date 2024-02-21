@@ -1,5 +1,8 @@
 package lesson_27.code.lessoncode.practice.task2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CourseManagement {
     public static void main(String[] args) {
         Teacher teacher1 = new Teacher("T1", "teacher 1");
@@ -9,6 +12,12 @@ public class CourseManagement {
        // teacher1.addCourse(course1);
         Course course2 = new Course("Course2", "course # 2", teacher2);
         //teacher2.addCourse(course2);
+
+        List<Course> courses = new ArrayList<>();
+        courses.add(course1);
+        courses.add(course2);
+
+
 
         Student student1 = new Student("S1", "Student 1");
         Student student2 = new Student("S2", "Student 2");
@@ -46,8 +55,26 @@ public class CourseManagement {
             System.out.println(course.getName());
         }
 
+        printCourseFromStudent(courses);
+        //System.out.println(course1);
 
-        System.out.println(course1);
+    }
 
+    public static void printCourseFromStudent(List<Course> courses) {
+
+        List<Student> allStudent = new ArrayList<>();
+
+
+        for (int i = 0; i < courses.size(); i++) {
+            Course currentCourse = courses.get(i);
+            allStudent.addAll(currentCourse.getStudents());
+        }
+
+        // позже мы научимся сортировать наши коллекции которые хранят в себе
+        // экземпляры классов по различным критериям (параметрам)
+
+        for (Student student : allStudent) {
+            System.out.println(student);
+        }
     }
 }
