@@ -1,4 +1,4 @@
-package lesson_27.code.lessoncode.practice;
+package lesson_27.code.lessoncode.practice.task1;
 
 public class Department {
 

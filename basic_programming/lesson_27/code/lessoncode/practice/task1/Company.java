@@ -1,7 +1,6 @@
-package lesson_27.code.lessoncode.practice;
+package lesson_27.code.lessoncode.practice.task1;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Company {
     public static void main(String[] args) {
