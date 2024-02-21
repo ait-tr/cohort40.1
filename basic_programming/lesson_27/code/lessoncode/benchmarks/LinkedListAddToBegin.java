@@ -11,7 +11,7 @@ class LinkedListAddToBegin {
 
         long start = System.currentTimeMillis();
 
-        for (int i = 0; i < 10_000_000; i++) {
+        for (int i = 0; i < 1_000_000; i++) {
             integers.add(0, i);
         }
 
