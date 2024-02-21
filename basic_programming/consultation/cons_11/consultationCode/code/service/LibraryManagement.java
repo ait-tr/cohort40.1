@@ -6,7 +6,6 @@ import consultation.cons_11.consultationCode.code.entity.Reader;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class LibraryManagement {
 
@@ -40,21 +39,49 @@ public class LibraryManagement {
         readers.add(reader);
     }
 
-    public void bookAndReader(BookAndReader bookAndReader){
+    public void addBookAndReader(BookAndReader bookAndReader){
         bookAndReaders.add(bookAndReader);
     }
+
+
 
     // получить список книг, которые выданы читателю
     public List<Book> getBookByReader(Integer readerId){
         List<Book> allBooksByReader = new ArrayList<>();
+
+        // мы должны пройтись по коллекции объектов читатель-книга
+        // найти в них номер читателя
+        // сравнить это номер с предметом для поиска
+        // если номер совпадает, то мы должны
+        // взять номер книги который соответствует это записи
+        // и НАЙТИ среди всех экземпляров класса 'книга'
+        // ту, у которой это ID совпадает
+
         for (int i = 0; i < bookAndReaders.size(); i++) {
             Integer currentReaderId = bookAndReaders.get(i).getReaderId();
             if (currentReaderId.equals(readerId)) {
-                //
-                allBooksByReader.add()
+
+                Book foundedBookById = findBookById(bookAndReaders.get(i).getBookId());
+
+                if (foundedBookById != null) {
+                allBooksByReader.add(foundedBookById);
+                } else {
+                    System.out.println("Книга потеряна!");
+                }
             }
         }
 
+        return allBooksByReader;
+
+    }
+
+    private Book findBookById(Integer bookId) {
+        for (Book book : books){
+            if (book.getBookId().equals(bookId)) {
+                return book;
+            }
+        }
+        return null;
     }
 
 }

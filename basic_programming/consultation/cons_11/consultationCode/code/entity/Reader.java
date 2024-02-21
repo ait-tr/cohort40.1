@@ -16,4 +16,12 @@ public class Reader {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "Reader{" +
+                "readerId=" + readerId +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
