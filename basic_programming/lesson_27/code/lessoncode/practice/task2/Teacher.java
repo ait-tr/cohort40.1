@@ -30,4 +30,13 @@ public class Teacher {
     public void addCourse(Course course){
         courses.add(course);
     }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "teacherId='" + teacherId + '\'' +
+                ", name='" + name + '\'' +
+                ", courses=" + courses +
+                '}';
+    }
 }

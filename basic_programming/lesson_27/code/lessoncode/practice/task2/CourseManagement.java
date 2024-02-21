@@ -6,8 +6,10 @@ public class CourseManagement {
         Teacher teacher2 = new Teacher("T2", "teacher 2");
 
         Course course1 = new Course("Course1", "course # 1", teacher1);
+       // teacher1.addCourse(course1);
         Course course2 = new Course("Course2", "course # 2", teacher2);
-        
+        //teacher2.addCourse(course2);
+
         Student student1 = new Student("S1", "Student 1");
         Student student2 = new Student("S2", "Student 2");
         Student student3 = new Student("S3", "Student 3");
@@ -44,6 +46,8 @@ public class CourseManagement {
             System.out.println(course.getName());
         }
 
+
+        System.out.println(course1);
 
     }
 }
