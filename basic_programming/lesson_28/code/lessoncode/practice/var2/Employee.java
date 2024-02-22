@@ -9,7 +9,6 @@ class Employee {
         this.name = name;
     }
 
-    // Геттеры
     public int getId() {
         return id;
     }
