@@ -31,13 +31,16 @@ public class Company {
         departmentEmployees.get(department2).add(employees.get(3));
         departmentEmployees.get(department2).add(employees.get(4));
 
+
+        System.out.println(departmentEmployees);
+
         // Вывод информации о сотрудниках по отделам
-        for (Map.Entry<Department, List<Employee>> entry : departmentEmployees.entrySet()) {
-            System.out.println("Отдел: " + entry.getKey().getName());
-            for (Employee employee : entry.getValue()) {
-                System.out.println(employee);
-            }
-        }
+//        for (Map.Entry<Department, List<Employee>> entry : departmentEmployees.entrySet()) {
+//            System.out.println("Отдел: " + entry.getKey().getName());
+//            for (Employee employee : entry.getValue()) {
+//                System.out.println(employee);
+//            }
+//        }
 
         // Создаем коллекцию всех отделов
         List<Department> departments = new ArrayList<>(departmentEmployees.keySet());
