@@ -1,7 +1,9 @@
 package lesson_29.code.lessoncode.map;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class MapExample2 {
     public static void main(String[] args) {
@@ -25,6 +27,16 @@ public class MapExample2 {
         for (String value : telBook.values()) {
             System.out.println("Значение: " + value);
         }
+
+        System.out.println("----- перенос данных из Map в Set<TelRecord> ----");
+
+        Set<TelRecord> records = new HashSet<>();
+
+        for (Map.Entry<String,String> entry : telBook.entrySet()) {
+            records.add(new TelRecord(entry.getKey(), entry.getValue()));
+        }
+
+        System.out.println(records);
 
     }
 }
