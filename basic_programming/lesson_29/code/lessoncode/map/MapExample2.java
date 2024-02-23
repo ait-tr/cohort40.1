@@ -17,12 +17,12 @@ public class MapExample2 {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
 
-        for ( String key : telBook.keySet()) {
+        for (String key : telBook.keySet()) {
             System.out.println("Ключ: " + key + ", Значение: " + telBook.get(key));
         }
 
 
-        for ( String value : telBook.values()) {
+        for (String value : telBook.values()) {
             System.out.println("Значение: " + value);
         }
 
