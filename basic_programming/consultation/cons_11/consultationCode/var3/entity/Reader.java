@@ -35,7 +35,7 @@ public class Reader {
                 '}';
     }
 
-    public void giveBookToReader()
+    public void giveBookToReader(){}
 
 
 }
