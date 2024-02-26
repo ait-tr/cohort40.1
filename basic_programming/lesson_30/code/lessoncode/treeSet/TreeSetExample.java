@@ -29,10 +29,13 @@ public class TreeSetExample {
 
         Set<Cat> cats = new TreeSet<>();
 
-        cats.add(new Cat("Barsik"));
-        cats.add(new Cat("Murzik"));
-        cats.add(new Cat("Matvej"));
-        cats.add(new Cat("Vasjka"));
+        cats.add(new Cat("Barsik",2));
+        cats.add(new Cat("Murzik",5));
+        cats.add(new Cat("Matvej",4));
+        cats.add(new Cat("Vasjka",1));
+        cats.add(new Cat("Oskar",1));
+        cats.add(new Cat("Oskar",3));
+        cats.add(new Cat("Vasjka",7));
 
         System.out.println(cats);
 
