@@ -16,7 +16,7 @@ public class BookDemo {
         library.add(new Book(12, "Book12"));
 
         for (Book mybook : library) {
-            System.out.println("id = " + mybook.getId() + "  entity.Book name: " + mybook.getBookName());
+            System.out.println("id = " + mybook.getId() + "  Book name: " + mybook.getBookName());
         }
     }
 }
