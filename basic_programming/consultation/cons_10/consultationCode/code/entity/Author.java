@@ -1,4 +1,4 @@
-package consultation.cons_12.consultationCode.code.entity;
+package consultation.cons_10.consultationCode.code.entity;
 
 public class Author {
     private int authorId;

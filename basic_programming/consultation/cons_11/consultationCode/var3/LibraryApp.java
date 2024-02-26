@@ -1,9 +1,9 @@
-package consultation.cons_12.consultationCode.code;
+package consultation.cons_11.consultationCode.var3;
 
-import consultation.cons_12.consultationCode.code.entity.Author;
-import consultation.cons_12.consultationCode.code.entity.Book;
-import consultation.cons_12.consultationCode.code.entity.Reader;
-import consultation.cons_12.consultationCode.code.service.LibraryManagement;
+import consultation.cons_11.consultationCode.var3.entity.Author;
+import consultation.cons_11.consultationCode.var3.entity.Book;
+import consultation.cons_11.consultationCode.var3.entity.Reader;
+import consultation.cons_11.consultationCode.var3.service.LibraryManagement;
 
 import java.util.ArrayList;
 import java.util.List;

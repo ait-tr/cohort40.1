@@ -1,10 +1,11 @@
-package consultation.cons_12.consultationCode.code.entity;
+package consultation.cons_11.consultationCode.var3.entity;
 
 public class Book {
     private Integer bookId;
     private String isbn;
     private String title;
     private Author author;
+    private Integer readerId;
 
     public Book(Integer bookId, String isbn, String title, Author author) {
         this.bookId = bookId;
@@ -29,6 +30,10 @@ public class Book {
         return author;
     }
 
+    public Integer getReaderId() {
+        return readerId;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -36,6 +41,7 @@ public class Book {
                 ", isbn='" + isbn + '\'' +
                 ", title='" + title + '\'' +
                 ", author=" + author +
+                ", readerId=" + readerId +
                 '}';
     }
 }

@@ -1,7 +1,7 @@
-package consultation.cons_12.consultationCode.var3.service;
+package consultation.cons_11.consultationCode.var3.service;
 
-import consultation.cons_12.consultationCode.var3.entity.Book;
-import consultation.cons_12.consultationCode.var3.entity.Reader;
+import consultation.cons_11.consultationCode.var3.entity.Book;
+import consultation.cons_11.consultationCode.var3.entity.Reader;
 
 import java.util.List;
 

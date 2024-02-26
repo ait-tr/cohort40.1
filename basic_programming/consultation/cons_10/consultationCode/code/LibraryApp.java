@@ -1,9 +1,10 @@
-package consultation.cons_12.consultationCode.var3;
+package consultation.cons_10.consultationCode.code;
 
-import consultation.cons_12.consultationCode.var3.entity.Author;
-import consultation.cons_12.consultationCode.var3.entity.Book;
-import consultation.cons_12.consultationCode.var3.entity.Reader;
-import consultation.cons_12.consultationCode.var3.service.LibraryManagement;
+import consultation.cons_10.consultationCode.code.entity.Author;
+import consultation.cons_10.consultationCode.code.entity.Book;
+import consultation.cons_10.consultationCode.code.entity.BookAndReader;
+import consultation.cons_10.consultationCode.code.entity.Reader;
+import consultation.cons_10.consultationCode.code.service.LibraryManagement;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +13,9 @@ public class LibraryApp {
     public static void main(String[] args) {
         List<Book> books = new ArrayList<>();
         List<Reader> readers = new ArrayList<>();
+        List<BookAndReader> bookAndReaders = new ArrayList<>();
 
-        LibraryManagement management = new LibraryManagement(books, readers);
+        LibraryManagement management = new LibraryManagement(books, readers, bookAndReaders);
 
         Author author1 = new Author(1, "Пушкин");
         Author author2 = new Author(2, "Дюма");
@@ -38,17 +40,24 @@ public class LibraryApp {
         management.addReader(new Reader(3, "Reader 3"));
 
 
-        List<Reader> readerList = management.getReaders();
-        Reader reader1 = readerList.get(0);
-        List<Book> readerBooks = reader1.getBooksByReader();
+        management.addBookAndReader(new BookAndReader(1,1));
+        management.addBookAndReader(new BookAndReader(2,1));
+        management.addBookAndReader(new BookAndReader(3,2));
+        management.addBookAndReader(new BookAndReader(4,2));
+        management.addBookAndReader(new BookAndReader(5,2));
+        management.addBookAndReader(new BookAndReader(6,3));
+        management.addBookAndReader(new BookAndReader(7,3));
+        management.addBookAndReader(new BookAndReader(8,1));
 
-        readerBooks.add(management.getBooks().get(4));
+        printList(management.getBooks());
 
-        // ------- добавим читателю № 2
+        System.out.println("==========");
+        printList(management.getReaders());
 
-        management.getReaders().get(1).getBooksByReader().add(management.getBooks().get(8));
 
-        printList(readers);
+        System.out.println("======= список книг у читателя Reader 3");
+
+        printList(management.getBookByReader(3));
 
     }
 

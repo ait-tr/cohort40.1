@@ -1,4 +1,4 @@
-package consultation.cons_12.consultationCode.var3.entity;
+package consultation.cons_11.consultationCode.var3.entity;
 
 import java.util.ArrayList;
 import java.util.List;
