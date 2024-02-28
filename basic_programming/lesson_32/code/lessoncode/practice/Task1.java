@@ -1,5 +1,7 @@
 package lesson_32.code.lessoncode.practice;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 public class Task1 {
@@ -45,6 +47,29 @@ public class Task1 {
 
 // перепишите логику кода таким образом, чтобы в стек помещались не
     // открывающиеся скобки, а "ожидаемые" закрывающиеся
+
+    public static boolean isCorrectBracketType2(String stringLine) {
+
+        Map<Character, Character> map = new HashMap<>();
+        map.put('(',')');
+        map.put('{','}');
+        map.put('[',']');
+
+        Stack<Character> stack = new Stack<>();
+        for (char ch : stringLine.toCharArray()) {
+
+            if (map.containsKey(ch)) {
+                stack.push(map.get(ch));
+            } else {
+                if (stack.empty() || stack.pop() != ch) {
+                    return false;
+                }
+            }
+        }
+        // Если стек пуст после обработки всех символов, последовательность верна
+        return stack.empty();
+    }
+
 
 
 }
