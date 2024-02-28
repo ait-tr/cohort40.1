@@ -27,7 +27,7 @@ public class StackBracketsDemo {
             if (ch == '(') {
                 stack.push(ch);
             } else if (ch == ')') {
-                // если наш стек - пуст то значит что нет первоначальной открывающейся скобки
+                // если наш стек - пуст, то значит что нет первоначальной открывающейся скобки
                 if (stack.empty()) {
                     return false;
                 } else {
