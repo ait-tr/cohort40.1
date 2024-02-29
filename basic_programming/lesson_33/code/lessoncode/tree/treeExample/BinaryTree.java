@@ -1,4 +1,4 @@
-package lesson_33.code.lessoncode.treeExample;
+package lesson_33.code.lessoncode.tree.treeExample;
 
 /*
 BinaryTree
