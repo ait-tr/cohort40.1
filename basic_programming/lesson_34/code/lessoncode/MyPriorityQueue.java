@@ -33,11 +33,12 @@ public class MyPriorityQueue {
             list.add(new PriorityElement(element, priority));
         } else {
             int indexInsert = 0;
+
             while (indexInsert < list.size() && priority <= list.get(indexInsert).getPriority()) {
                 indexInsert++;
             }
 
-            list.add(new PriorityElement(element, priority));
+            list.add(indexInsert, new PriorityElement(element, priority));
         }
     }
 
@@ -46,5 +47,12 @@ public class MyPriorityQueue {
             return null;
         }
         return list.poll().getElement();
+    }
+
+    @Override
+    public String toString() {
+        return "MyPriorityQueue{" +
+                "list=" + list +
+                '}';
     }
 }
