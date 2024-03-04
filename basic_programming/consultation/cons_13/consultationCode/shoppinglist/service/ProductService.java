@@ -31,7 +31,16 @@ public class ProductService {
          */
 
         List<ErrorDto> errors = validation.validate(productDto);
-        Integer newId = errors.isEmpty() ? productRepository.addProduct(productDto) : 0;
+
+        Integer newId;
+
+        if (errors.isEmpty()) {
+            newId =  productRepository.addProduct(productDto);
+        } else {
+            newId = 0;
+        }
+
+        // Integer newId = errors.isEmpty() ? productRepository.addProduct(productDto) : 0;
 
         return new ResponseForClientAddProduct(newId, errors);
 
