@@ -1,4 +1,4 @@
-package lesson_35.code.lessoncode.finalExample.FinalForVariable;
+package lesson_35.code.lessoncode.finalExample.finalForVariable;
 
 import java.util.Collections;
 import java.util.List;

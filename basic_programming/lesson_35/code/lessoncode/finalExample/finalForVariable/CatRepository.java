@@ -1,4 +1,4 @@
-package lesson_35.code.lessoncode.finalExample.FinalForVariable;
+package lesson_35.code.lessoncode.finalExample.finalForVariable;
 
 import java.util.ArrayList;
 import java.util.List;
