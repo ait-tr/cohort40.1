@@ -31,9 +31,10 @@ public class ProductService {
     public void findAll(){
         List<Product> products = repository.findAll();
 
-        for (Product product : products){
-            System.out.println(product);
-        }
+        System.out.println(products);
+//        for (Product product : products){
+//            System.out.println(product);
+//        }
     }
 
 
