@@ -31,7 +31,7 @@ public class UserInterface {
                     }
                     break;
                 case 2:
-                    System.out.println("такой опции еще нет");
+                    service.findAll();
                     break;
                 case 3:
                     System.out.println("такой опции еще нет");
