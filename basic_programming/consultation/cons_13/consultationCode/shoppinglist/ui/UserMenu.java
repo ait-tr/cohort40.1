@@ -20,7 +20,8 @@ public class UserMenu {
             }
             System.out.println("Make your choice: ");
 
-            int userInput = scanner.nextInt();
+            int userInput = Integer.parseInt(scanner.next());
+
             if (userInput < 0 || userInput >= commands.size()) {
                 System.out.println("Invalid option, please try again.");
             }
