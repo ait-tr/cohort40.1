@@ -1,4 +1,4 @@
-package lesson_36.code.lessoncode.generic2;
+package lesson_36.code.lessoncode.generics2;
 
 public class IntegerData {
 
