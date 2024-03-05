@@ -4,6 +4,7 @@ public enum ErrorCode {
 
     IE_500("Internal Server Error", 500),
     IE_400("Database error", 400),
+    IE_404("Not found", 404),
     IE_413("Product name validation error", 413),
     IE_415("Product price validation error", 415);
 
