@@ -1,4 +1,4 @@
-package lesson_36.code.lessoncode.generics;
+package lesson_36.code.lessoncode.generics.classes;
 
 public class Box<T> {
 
