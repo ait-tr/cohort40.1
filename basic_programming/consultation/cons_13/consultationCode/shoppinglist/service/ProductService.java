@@ -21,7 +21,7 @@ public class ProductService {
         this.validation = validation;
     }
 
-    public ResponseForClientAddProduct addNewProduct(ProductDto productDto){
+    public ResponseForClient<Integer> addNewProduct(ProductDto productDto){
         /*
         1) отдать входные данные на проверку - метод Validation
         2) если из валидации возвращается список ошибок НЕ ПУСТОЙ -> мы должны создать объект ResponseForClientAddProduct
@@ -42,7 +42,7 @@ public class ProductService {
 
         // Integer newId = errors.isEmpty() ? productRepository.addProduct(productDto) : 0;
 
-        return new ResponseForClientAddProduct(newId, errors);
+        return new ResponseForClient<>(newId, errors);
 
         }
 

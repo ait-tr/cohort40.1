@@ -1,6 +1,7 @@
 package consultation.cons_13.consultationCode.shoppinglist.ui;
 
 import consultation.cons_13.consultationCode.shoppinglist.dto.ProductDto;
+import consultation.cons_13.consultationCode.shoppinglist.dto.ResponseForClient;
 import consultation.cons_13.consultationCode.shoppinglist.dto.ResponseForClientAddProduct;
 import consultation.cons_13.consultationCode.shoppinglist.service.util.UserInput;
 import consultation.cons_13.consultationCode.shoppinglist.service.ProductService;
@@ -23,7 +24,7 @@ public class AddProductMenu implements MenuCommand{
 
         ProductDto productDto = new ProductDto(name, price, description);
 
-        ResponseForClientAddProduct addResult = service.addNewProduct(productDto);
+        ResponseForClient<Integer> addResult = service.addNewProduct(productDto);
         System.out.println(addResult);
 
     }
