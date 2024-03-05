@@ -1,6 +1,7 @@
 package lesson_36.code.lessoncode.generics.classes;
 
-public class Box<T> {
+// Upper bounding -> ограничение сверху
+public class Box<T extends Garbage> {
 
     private T item;
 
@@ -29,4 +30,9 @@ public class Box<T> {
 
 
      */
+
+    public double getItemWeight(){
+        return item.getWeight();
+    }
+
 }
