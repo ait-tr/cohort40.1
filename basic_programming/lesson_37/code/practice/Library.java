@@ -7,6 +7,9 @@ class Library<T> {
 
     public void addBook(Book<T> book) {
         List<Book<T>> books = booksByGenre.getOrDefault(book.getGenre(), new ArrayList<>());
+//        if (books == null) {
+//            books = new ArrayList<>();
+//        }
         books.add(book);
         booksByGenre.put(book.getGenre(), books);
     }
