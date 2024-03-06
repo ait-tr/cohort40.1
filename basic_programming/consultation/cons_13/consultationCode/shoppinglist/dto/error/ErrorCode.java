@@ -15,4 +15,12 @@ public enum ErrorCode {
         this.description = description;
         this.statusCode = statusCode;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getStatusCode() {
+        return statusCode;
+    }
 }
