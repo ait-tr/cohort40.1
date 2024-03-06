@@ -16,4 +16,12 @@ class Book<T> {
     public T getGenre() {
         return genre;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", genre=" + genre +
+                '}';
+    }
 }
