@@ -1,4 +1,4 @@
-package lesson_38.code.carDoor;
+package lesson_38.code.innerClasses.carDoor;
 
 class Car {
 

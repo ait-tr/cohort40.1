@@ -1,4 +1,4 @@
-package lesson_38.code.carDoor;
+package lesson_38.code.innerClasses.carDoor;
 
 public class CarDemo {
     public static void main(String[] args) {

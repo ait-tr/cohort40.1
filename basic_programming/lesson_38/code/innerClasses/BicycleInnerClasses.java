@@ -1,4 +1,4 @@
-package lesson_38.code;
+package lesson_38.code.innerClasses;
 
 public class BicycleInnerClasses {
 
