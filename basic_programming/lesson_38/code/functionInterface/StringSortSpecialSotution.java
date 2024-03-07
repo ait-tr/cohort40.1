@@ -48,8 +48,11 @@ public class StringSortSpecialSotution {
         // Step 5
 
 
-
         Collections.sort(myList,(o1,o2) -> o1.length() - o2.length());
+
+        System.out.println(myList);
+
+        Collections.sort(myList,(o1,o2) -> o2.length() - o1.length());
 
         System.out.println(myList);
     }
