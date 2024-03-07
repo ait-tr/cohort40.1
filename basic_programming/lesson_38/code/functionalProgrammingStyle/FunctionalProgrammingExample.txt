@@ -1,0 +1,68 @@
+ООП подход к программированию
+
+класс Student - name и средняя оценка GPA
+
+class Student{
+String name;
+double gpa;
+
+public Student(String name, double gpa) {
+this.name = name;
+this.gpa = gpa}
+
+
+double getGpa() {
+return this.gpa;}
+
+void changeGPA(double newValueGPA){
+gpa = gpa + newValueGPA;
+}
+
+}
+
+main() {
+Student student1 = new Student("John", 3.5);
+Student student2 = new Student("Bill", 3.3;
+Student student3 = new Student("Andrew", 4.7);
+
+student1.changeGPA(0.2);
+
+// создать массив из студентов
+
+Student[] group = {student1, student2, student3};
+
+for (int i = 0; i < group.length; i++) {
+group[i].changeGPA(newValue);}
+}
+
+
+}
+
+
+////////////// в функциональном стиле ////////////
+
+создали массив students = [
+['John', 3.5],
+['Bill', 3.3],
+['Andrew', 4.7]
+]
+
+newStudents = changeGPAs(students)
+
+newStudents.map(students => changeGPAs(students)) - получили новые данные
+
+students.map(students => changeGPAs(students)) - перезаписали данные
+---------------
+
+function changeGPAs(students) {
+return students.map(student => changeGPA(student, newValue))
+}
+
+function changeGPA(student, amount) {
+return [student[0], student[1] + amount]
+}
+}
+
+
+
+)
