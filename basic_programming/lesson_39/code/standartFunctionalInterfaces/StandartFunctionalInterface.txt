@@ -1,0 +1,15 @@
+Predicate<T>
+Consumer<T>
+Function<T,R>
+Supplier<T>
+UnaryOperator<T>
+BinaryOperator<T>
+
+
+1. Predicate<T>
+public interface Predicate<T> {
+ boolean test(T t);}
+
+ФИ проверяет соблюдение некоторого условия
+если оно соблюдается, то метод test возвращает значение true.
+В качестве параметра лямбда-выражение принимает объект типа T.
