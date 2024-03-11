@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public class OptionalFI {
     public static void main(String[] args) {
-        Optional<Integer> optionalI = Optional.ofNullable(10);
+        Optional<Integer> optionalI = Optional.ofNullable(1);
 
         optionalI.ifPresent(value -> System.out.println("Значение = " + value));
 
