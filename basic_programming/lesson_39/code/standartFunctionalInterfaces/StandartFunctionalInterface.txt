@@ -21,3 +21,31 @@ public interface Consumer<T> {
     }
 
     ФИ используется когда вам НЕ НУЖНО возвращать результат как результат работы метода
+
+3. Function<T,R> - используется когда надо выполнить операцию и получить результат
+
+    public interface Function<T,R> {
+    R apply(T t);
+    }
+
+4. Supplier<T> - используется для получения результата, НО когда нет ничего для передачи в качестве параметра
+
+public interface Supplier<T> {
+T get();
+}
+
+5. UnaryOperator <T> - используется когда вход и выход одного типа
+
+public interface UnaryOperator<T> {
+T apply(T t);
+}
+
+6. BinaryOperator <T> - когда оба входа и выход одного типа
+
+public interface BinaryOperator<T> {
+T apply(T t1, T t2);
+}
+
+Bi-Function- интерфейсы которым для работы нужно передать два параметра
+Bi-Consumer
+Bi-Predicate
