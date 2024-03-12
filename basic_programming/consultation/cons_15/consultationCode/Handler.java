@@ -12,7 +12,7 @@ public class Handler implements Function<Request, String> {
     public Handler() {
         this.responses = new LinkedHashMap<>();
         responses.put(v -> v >=100 && v < 200, "Запрос получен");
-        responses.put(v -> v >=200 && v < 300, "Ok");
+        responses.put(v -> v >=100 && v < 200, "Ok");
         responses.put(v -> v >=300 && v < 400, "Сервисный запрос");
         responses.put(v -> v >=400 && v < 500, "Ошибка пользователя");
         responses.put(v -> v >=500 && v <= 550, "Ошибка сервера");
