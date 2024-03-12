@@ -1,0 +1,12 @@
+
+list.forEach((s) -> System.out.println(s));
+
+равноценно:
+
+list.forEach(s -> System.out.println(s));
+
+list.forEach((System.out::println);
+
+
+x -> объект.метод(x), то мы можем заменить на такую форму записи
+объект::метод
