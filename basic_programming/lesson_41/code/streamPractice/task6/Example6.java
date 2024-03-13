@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 /*
 найти всех производителей
  */
+public class Example6{
     public static void main(String[] args) {
 
         List<Phone> phoneList = new ArrayList<>();
