@@ -1,9 +1,6 @@
 package consultation.cons_16.consultationCode;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Task7 {
@@ -27,6 +24,22 @@ public class Task7 {
 
 
         int limit = 10;
+
+        Map<String, Double> avgPricesLoop = new HashMap<>();
+
+        ProductUtil util = new ProductUtil();
+
+        for (Product product : products) {
+            if (product.getQuantity() > limit) {
+                String category = product.getCategory();
+                double avgPrice = util.calculateAvgPriceForCategory(products, category, limit);
+                avgPricesLoop.put(category,avgPrice);
+
+            }
+        }
+
+        System.out.println(avgPricesLoop);
+
 
         Map<String, Double> avgPrices = products.stream()
                 // отфильтровать продукті с количеством больше чем limit
@@ -64,5 +77,21 @@ public class Task7 {
         List<Map.Entry<String,Double>> sortedByAvgPrice = new ArrayList<>(avgPrices.entrySet());
 
         System.out.println(sortedByAvgPrice);
+
+        Comparator<Map.Entry<String,Double>> mapElementComparator = new Comparator<Map.Entry<String, Double>>() {
+            @Override
+            public int compare(Map.Entry<String, Double> elem1, Map.Entry<String, Double> elem2) {
+                return elem2.getValue().compareTo(elem1.getValue());
+            }
+        };
+
+        sortedByAvgPrice.sort(mapElementComparator);
+        System.out.println(sortedByAvgPrice);
+
+        // аналогично работает стандартный метод
+
+        // sortedByAvgPrice.sort(Map.Entry.<String,Double>comparingByValue().reversed());
+
+
     }
 }
