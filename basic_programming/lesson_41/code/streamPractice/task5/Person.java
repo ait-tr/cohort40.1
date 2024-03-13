@@ -26,4 +26,7 @@ public class Person {
                 '}';
     }
 
+    public static Person maxAge(Person person1, Person person2) {
+        return person1.getAge() > person2.getAge() ? person1 : person2;
+    }
 }

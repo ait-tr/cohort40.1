@@ -20,6 +20,25 @@ public class PersonMaxAgeDemo {
 
         List<Person> users = Arrays.asList(person1, person2, person3, person4, person5);
 
+
+        Person userWithMaxAge = users.stream()
+                .sorted(Comparator.comparingInt(Person::getAge).reversed())
+                .findFirst()
+                .orElse(null);
+
+        System.out.println(userWithMaxAge);
+
+        userWithMaxAge = users.stream()
+                .reduce((p1,p2) -> p1.getAge() > p2.getAge() ? p1 : p2)
+                .get();
+
+        System.out.println(userWithMaxAge);
+
+
+        userWithMaxAge = users.stream()
+                .reduce((p1, p2) -> Person.maxAge(p1,p2))
+                .get();
+        System.out.println(userWithMaxAge);
     }
 
 }

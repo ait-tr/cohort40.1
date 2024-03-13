@@ -20,6 +20,18 @@ public class TaskStream3 {
         employees.add(new Employee("Mary", "Manager", 700));
         employees.add(new Employee("John", "Developer", 1200));
 
+        List<Employee> employeesNotCEO = employees.stream()
+                .filter(employee -> !employee.getStaff().equals("CEO"))
+                .toList();
 
+        System.out.println(employeesNotCEO);
+
+
+        List<Employee> employeesManagers = employees.stream()
+                .filter(employee -> employee.getStaff().equals("Manager"))
+                .filter(employee -> employee.getSalary() > 700)
+                .toList();
+
+        System.out.println(employeesManagers);
     }
 }

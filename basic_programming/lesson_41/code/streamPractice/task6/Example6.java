@@ -20,7 +20,12 @@ public class Example6{
         phoneList.add(new Phone("Nokia", 620));
         phoneList.add(new Phone("Xiaomi", 900));
 
+        Set<String> phones = phoneList.stream()
+                .filter(x -> x.getPrice() > 700)
+                .map(x -> x.getModel())
+                .collect(Collectors.toSet());
 
+        System.out.println(phones);
 
     }
 }

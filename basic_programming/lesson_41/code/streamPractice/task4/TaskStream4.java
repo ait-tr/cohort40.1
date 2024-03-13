@@ -17,7 +17,21 @@ public class TaskStream4 {
         humans.add(new Human("Victor", Arrays.asList("+673473473", "+64584584567")));
         humans.add(new Human("Petr", Arrays.asList("+25635623564", "+3263565465")));
 
+        List<String> phonesNumbers = new ArrayList<>();
 
+        for (Human human : humans){
+            phonesNumbers.addAll(human.getPhones());
+        }
+
+        System.out.println(phonesNumbers);
+
+        // с помощью Stream API
+
+        List<String> phones = humans.stream()
+                .flatMap(human -> human.getPhones().stream())
+                .toList();
+
+        System.out.println(phones);
 
        }
 }

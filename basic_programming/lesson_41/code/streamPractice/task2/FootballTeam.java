@@ -1,6 +1,6 @@
 package lesson_41.code.streamPractice.task2;
 
-public class FootballTeam {
+public class FootballTeam  implements Comparable<FootballTeam>{
 
     private String name;
     private int power;
@@ -24,5 +24,10 @@ public class FootballTeam {
                 "name='" + name + '\'' +
                 ", power=" + power +
                 '}';
+    }
+
+    @Override
+    public int compareTo(FootballTeam o) {
+        return Integer.compare(power, o.getPower());
     }
 }
