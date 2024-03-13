@@ -1,6 +1,5 @@
-package lesson_41.code.streamPractice;
+package lesson_41.code.streamPractice.task2;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

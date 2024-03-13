@@ -1,4 +1,4 @@
-package lesson_41.code.streamPractice;
+package lesson_41.code.streamPractice.task2;
 
 public class FootballTeam {
 

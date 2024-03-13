@@ -1,4 +1,4 @@
-package lesson_41.code.streamPractice;
+package lesson_41.code.streamPractice.task1;
 
 import java.util.Arrays;
 import java.util.List;
