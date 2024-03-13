@@ -13,15 +13,15 @@ public class Library {
 
     private void init(){
         books = new ArrayList<>();
-        books.add(new Book("Оруэлл", "1984", 2021));
+        books.add(new Book("Автор2", "1984", 2021));
         books.add(new Book("Автор2", "1985", 2021));
         books.add(new Book("Автор3", "1986", 2020));
-        books.add(new Book("Автор4", "1987", 2023));
-        books.add(new Book("Автор5", "1988", 2022));
-        books.add(new Book("Автор6", "1989", 2020));
-        books.add(new Book("Автор7", "1900", 2021));
-        books.add(new Book("Автор8", "1954", 2022));
-        books.add(new Book("Автор9", "1924", 2023));
+        books.add(new Book("Автор3", "1987", 2023));
+        books.add(new Book("Автор2", "1988", 2022));
+        books.add(new Book("Автор3", "1989", 2020));
+        books.add(new Book("Автор2", "1900", 2021));
+        books.add(new Book("Автор2", "1954", 2022));
+        books.add(new Book("Автор3", "1924", 2023));
         // и так далее для других книг
 
         readers = new ArrayList<>();
