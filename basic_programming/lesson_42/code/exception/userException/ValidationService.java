@@ -1,5 +1,7 @@
 package lesson_42.code.exception.userException;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ValidationService implements Validation{
@@ -15,26 +17,34 @@ public class ValidationService implements Validation{
 
 
     @Override
-    public String validate(Product product) {
+    public List<String> validate(Product product) {
+
+        List<String> errorMessages = new ArrayList<>();
+
         if (product.getName() == null) {
-            return "Product name is null";
+            errorMessages.add("Product name is null");
         }
         if (product.getName().equals("")) {
-            return "Product name is empty";
+            errorMessages.add("Product name is empty");
         }
         if (product.getName().length() < 3) {
-            return "Product name length less than 3";
+            errorMessages.add("Product name length less than 3");
         }
         if (product.getName().isBlank()) {
-            return "Product name is blank";
+            errorMessages.add("Product name is blank");
         }
         if (product.getPrice() == null) {
-            return "Product price is null";
+            errorMessages.add("Product price is null");
         }
         if (product.getPrice() <= 0) {
-            return "Product price less than 0";
+            errorMessages.add("Product price less than 0");
         }
-        return "Ok";
+
+//        if (errorMessages.isEmpty()) {
+//            errorMessages.add("Ok");
+//        }
+
+        return errorMessages;
     }
 
 

@@ -1,5 +1,7 @@
 package lesson_42.code.exception.userException;
 
+import java.util.List;
+
 public class ProductService {
 
     private final Validation validationService;
@@ -10,9 +12,9 @@ public class ProductService {
 
     public void add(Product product) {
 
-        String validationResult = validationService.validate(product);
+        List<String> validationResult = validationService.validate(product);
 
-        if (validationResult.equals("Ok")) {
+        if (validationResult.isEmpty()) {
             System.out.println("Success add new product");
         } else {
             System.out.println(validationResult);

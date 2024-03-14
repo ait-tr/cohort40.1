@@ -1,6 +1,8 @@
 package lesson_42.code.exception.userException;
 
+import java.util.List;
+
 public interface Validation {
 
-    public String validate(Product product);
+    public List<String> validate(Product product);
 }
