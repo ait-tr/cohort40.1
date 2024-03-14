@@ -4,9 +4,9 @@ import java.util.List;
 
 public class ProductService {
 
-    private final Validation validationService;
+    private final ValidationService validationService;
 
-    public ProductService(Validation validationService) {
+    public ProductService(ValidationService validationService) {
         this.validationService = validationService;
     }
 

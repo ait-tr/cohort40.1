@@ -2,9 +2,8 @@ package lesson_42.code.exception.userException;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
-public class ValidationService {
+public class ValidationServiceWithException {
 
     /*
    проверка на:
@@ -16,8 +15,7 @@ public class ValidationService {
     */
 
 
-
-    public List<String> validate(Product product) {
+    public void validate(Product product) {
 
         List<String> errorMessages = new ArrayList<>();
 
@@ -40,11 +38,15 @@ public class ValidationService {
             errorMessages.add("Product price less than 0");
         }
 
-//        if (errorMessages.isEmpty()) {
-//            errorMessages.add("Ok");
-//        }
 
-        return errorMessages;
+        if (!errorMessages.isEmpty()) {
+            String allMessages = errorMessages.stream()
+                    .reduce((finalMessage, currentMessage) -> (finalMessage + "\n" + currentMessage))
+                    .get();
+
+            throw new ProductValidationException(allMessages);
+        }
+
     }
 
 
