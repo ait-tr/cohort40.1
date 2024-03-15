@@ -1,0 +1,8 @@
+•	assertEquals(Object expecteds, Object actuals) — проверяет, равны ли передаваемые обьекты.
+•	assertTrue(boolean flag) — проверяет, возвращает ли переданное значение — true.
+•	assertFalse(boolean flag) — проверяет, возвращает ли переданное значение — false.
+•	assertNull([message], object) – проверяет, что объект является пустым null.
+    assertNotNull([message], object) – проверяет, что объект не является пустым null.
+    assertSame([String], expected, actual) – проверяет, что обе переменные относятся к одному объекту.
+    assertNotSame([String], expected, actual) – проверяет, что обе переменные относятся к разным объектам.
+
