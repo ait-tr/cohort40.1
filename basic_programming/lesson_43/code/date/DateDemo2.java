@@ -22,5 +22,17 @@ public class DateDemo2 {
 
         System.out.println(quarter);
 
+
+
+        LocalDateTime dateTime1 = LocalDateTime.of (2024, 3,14,10,0);
+        LocalDateTime dateTime2 = LocalDateTime.of (2024, 3,15,10,0);
+
+        boolean isBefore = dateTime1.isBefore(dateTime2);
+        boolean isAfter = dateTime1.isAfter(dateTime2);
+
+        System.out.println("dateTime1 is before dateTime2 : " + isBefore);
+        System.out.println("dateTime1 is after dateTime2 : " + isAfter);
+
+
     }
 }
