@@ -55,4 +55,336 @@
 Выбор между `StringBuffer` и `StringBuilder` зависит от конкретных требований к приложению и среде его выполнения.
 
 
+### Java I/O
+Java I/O (Ввод/Вывод в Java) представляет собой мощный API для работы с вводом и выводом данных в Java. 
+Он включает в себя множество классов и интерфейсов для обработки различных типов данных, в том числе для 
+работы с файлами, сетевыми потоками и многое другое. 
+
+### Ввод с клавиатуры
+Для ввода с клавиатуры обычно используется `System.in`, который является стандартным потоком ввода. Он может быть обернут в `InputStreamReader` и `BufferedReader` для удобства чтения текста.
+
+```java
+BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+String inputLine = reader.readLine(); // Чтение строки ввода с клавиатуры
+```
+
+### Вывод на экран
+Для вывода текста на экран используется `System.out`, который является стандартным потоком вывода.
+
+```java
+System.out.println("Текст для вывода на экран");
+```
+
+### Сообщения об ошибке
+Для вывода сообщений об ошибках используется `System.err`, который аналогичен `System.out`, но предназначен для вывода ошибок и диагностических сообщений.
+
+```java
+System.err.println("Сообщение об ошибке");
+```
+
+### Работа с файлами
+
+Основные понятия Java I/O строятся вокруг потоков (streams), которые представляют собой абстракции для чтения или записи последовательности данных.
+В Java I/O основное разделение идет на две большие группы: потоки байтов (byte streams) и потоки символов (character streams). 
+Потоки байтов используются для чтения и записи бинарных данных, в то время как потоки символов предназначены для работы с текстовыми данными.
+
+### Потоки байтов
+Основные классы для работы с байтовыми потоками - это `InputStream` и `OutputStream`. Примеры классов, наследующихся от этих абстрактных классов, включают `FileInputStream` и `FileOutputStream`.
+
+**Пример чтения файла с использованием `FileInputStream`:**
+```java
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class ByteStreamExample {
+    public static void main(String[] args) {
+        try (FileInputStream fis = new FileInputStream("example.txt")) {
+            int i;
+            while ((i = fis.read()) != -1) {
+                System.out.print((char) i);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+**Пример записи в файл с использованием `FileOutputStream`:**
+```java
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class ByteStreamExample {
+    public static void main(String[] args) {
+        try (FileOutputStream fos = new FileOutputStream("example.txt")) {
+            String data = "Hello, World!";
+            fos.write(data.getBytes());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+### Потоки символов
+Для работы с потоками символов используются классы `Reader` и `Writer`. Примеры наследников этих классов включают `FileReader` и `FileWriter`.
+
+**Пример чтения файла с использованием `FileReader`:**
+```java
+import java.io.FileReader;
+import java.io.IOException;
+
+public class CharacterStreamExample {
+    public static void main(String[] args) {
+        try (FileReader fr = new FileReader("example.txt")) {
+            int i;
+            while ((i = fr.read()) != -1) {
+                System.out.print((char) i);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+**Пример записи в файл с использованием `FileWriter`:**
+```java
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class CharacterStreamExample {
+    public static void main(String[] args) {
+        try (FileWriter fw = new FileWriter("example.txt")) {
+            String data = "Hello, Java!";
+            fw.write(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+### Буферизация
+Java также предоставляет классы для буферизации ввода и вывода, такие как `BufferedReader` и `BufferedWriter`, что увеличивает эффективность операций I/O, позволяя читать или писать данные большими блоками.
+
+**Пример чтения файла с использованием `BufferedReader`:**
+```java
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class BufferedReaderExample {
+    public static void main(String[] args) {
+        try (BufferedReader br = new BufferedReader(new FileReader("example.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+**Пример записи в файл с использованием `BufferedWriter`:**
+```java
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class BufferedWriterExample {
+    public static void main(String[] args) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("example.txt"))) {
+            String data = "Hello, Buffered World!";
+            bw.write(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+### Работа с датами
+
+Работа с датами в Java — важная часть разработки, поскольку позволяет управлять временными метками, датами и временем. 
+В Java есть несколько классов для работы с датами, в том числе `Date` и `Calendar`. 
+
+### Класс `Date`
+
+Класс `Date` представляет конкретный момент времени, с точностью до миллисекунд.
+
+#### Основные методы класса `Date`:
+
+- `boolean after(Date when)` - проверяет, что этот момент времени после указанной даты.
+- `boolean before(Date when)` - проверяет, что этот момент времени до указанной даты.
+- `long getTime()` - возвращает количество миллисекунд, прошедших с 1 января 1970 года.
+- `void setTime(long time)` - устанавливает дату и время, основываясь на количестве миллисекунд, прошедших с 1 января 1970 года.
+
+#### Пример работы с `Date`:
+
+```java
+import java.util.Date;
+
+Date now = new Date();
+System.out.println("Текущая дата и время: " + now);
+
+Date anotherDate = new Date(1000000000000L);
+System.out.println("Дата, соответствующая 1,000,000,000,000 миллисекундам с 1 января 1970: " + anotherDate);
+
+System.out.println("Сейчас после anotherDate? " + now.after(anotherDate));
+```
+
+### Класс `Calendar`
+
+Класс `Calendar` — это абстрактный класс, который предоставляет методы для преобразования времени между конкретным моментом и набором полей календаря, таких как ГОД, МЕСЯЦ, ДЕНЬ, ЧАС и так далее.
+
+#### Основные методы класса `Calendar`:
+
+- `void add(int field, int amount)` - добавляет или вычитает указанное количество времени к указанному календарному полю.
+- `void set(int year, int month, int date)` - устанавливает значения года, месяца и дня.
+- `void set(int field, int value)` - устанавливает данное поле календаря в указанное значение.
+- `int get(int field)` - возвращает значение указанного поля календаря.
+
+#### Пример работы с `Calendar`:
+
+```java
+import java.util.Calendar;
+
+Calendar cal = Calendar.getInstance();
+System.out.println("Текущее время: " + cal.getTime());
+
+cal.set(Calendar.YEAR, 2023);
+cal.set(Calendar.MONTH, Calendar.FEBRUARY);
+cal.set(Calendar.DAY_OF_MONTH, 28);
+
+System.out.println("Измененная дата: " + cal.getTime());
+
+cal.add(Calendar.DAY_OF_MONTH, 1);
+System.out.println("Добавляем один день: " + cal.getTime());
+```
+
+### Пакет `java.time`
+
+Класс `Calendar` в Java имеет несколько недостатков, которые стали причинами для разработки нового API для работы с датой и временем в Java 8 (`java.time`). Вот основные минусы класса `Calendar`:
+
+1. **Сложность в использовании**: `Calendar` является абстрактным классом, и его API не интуитивно понятен. Например, месяцы в `Calendar` индексируются с 0, что может привести к ошибкам в коде (январь — это 0, февраль — 1 и так далее).
+
+2. **Мутабельность**: Объекты `Calendar` являются изменяемыми (mutable), что может привести к ошибкам, связанным с многопоточностью и безопасностью использования объектов `Calendar` в приложении. Например, изменение одного экземпляра `Calendar` в одной части кода может неожиданно повлиять на другие части программы, которые используют тот же экземпляр.
+
+3. **Неоднозначность**: `Calendar` пытается обрабатывать как время, так и дату, а также часовые пояса, что приводит к его перегруженности и увеличению шансов ошибок при работе с часовыми поясами или летним временем.
+
+4. **Устаревшие методы**: Некоторые методы класса `Calendar`, например, `getYear()`, `getMonth()` и `getDay()`, устарели и не рекомендуются к использованию, что может вводить в заблуждение разработчиков.
+
+5. **Отсутствие поддержки ISO 8601**: В стандарте ISO 8601 определены четкие правила представления дат и времени, но `Calendar` не предоставляет прямую поддержку этого стандарта.
+
+6. **Неполнота**: `Calendar` не предоставляет достаточно функциональности для некоторых специфических операций, таких как получение разницы между датами или поддержка различных календарей, кроме григорианского.
+
+Из-за этих недостатков разработчикам Java рекомендуется использовать более современный и удобный API из пакета `java.time`, когда это возможно.
+
+С выходом Java 8 появился новый API для работы с датами и временем, который находится в пакете `java.time` и считается более предпочтительным для использования. 
+
+Пакет `java.time`, введенный в Java 8, представляет собой современный API для работы с датой и временем, предоставляя более удобные и гибкие инструменты по сравнению с устаревшими `Date` и `Calendar`. 
+
+Вот некоторые ключевые классы из этого пакета:
+
+### `LocalDate`
+
+Класс `LocalDate` представляет дату без времени и часового пояса. Он используется, когда вам нужны только год, месяц и день.
+
+#### Пример использования `LocalDate`:
+
+```java
+import java.time.LocalDate;
+
+LocalDate today = LocalDate.now();
+System.out.println("Сегодняшняя дата: " + today);
+
+LocalDate specificDate = LocalDate.of(2024, 1, 1);
+System.out.println("Конкретная дата: " + specificDate);
+
+LocalDate parsedDate = LocalDate.parse("2024-02-01");
+System.out.println("Разобранная дата: " + parsedDate);
+
+LocalDate tomorrow = today.plusDays(1);
+System.out.println("Дата завтра: " + tomorrow);
+```
+
+### `LocalTime`
+
+Класс `LocalTime` представляет время без даты и часового пояса.
+
+#### Пример использования `LocalTime`:
+
+```java
+import java.time.LocalTime;
+
+LocalTime now = LocalTime.now();
+System.out.println("Текущее время: " + now);
+
+LocalTime specificTime = LocalTime.of(13, 30, 15);
+System.out.println("Конкретное время: " + specificTime);
+
+LocalTime parsedTime = LocalTime.parse("20:45:30");
+System.out.println("Разобранное время: " + parsedTime);
+```
+
+### `LocalDateTime`
+
+`LocalDateTime` сочетает в себе `LocalDate` и `LocalTime`, представляя дату и время без часового пояса.
+
+#### Пример использования `LocalDateTime`:
+
+```java
+import java.time.LocalDateTime;
+
+LocalDateTime now = LocalDateTime.now();
+System.out.println("Текущие дата и время: " + now);
+
+LocalDateTime specificDateTime = LocalDateTime.of(2024, 1, 1, 20, 45, 30);
+System.out.println("Конкретные дата и время: " + specificDateTime);
+
+LocalDateTime parsedDateTime = LocalDateTime.parse("2024-01-01T20:45:30");
+System.out.println("Разобранные дата и время: " + parsedDateTime);
+```
+
+### `ZonedDateTime`
+
+`ZonedDateTime` представляет дату и время с информацией о часовом поясе. Это полезно для работы с моментами времени в разных часовых поясах.
+
+#### Пример использования `ZonedDateTime`:
+
+```java
+import java.time.ZonedDateTime;
+import java.time.ZoneId;
+
+ZonedDateTime nowInTokyo = ZonedDateTime.now(ZoneId.of("Asia/Tokyo"));
+System.out.println("Текущие дата и время в Токио: " + nowInTokyo);
+
+ZonedDateTime specificZonedDateTime = ZonedDateTime.of(specificDateTime, ZoneId.of("Europe/Paris"));
+System.out.println("Конкретные дата и время в определенном часовом поясе: " + specificZonedDateTime);
+```
+
+### `Period` и `Duration`
+
+`Period` и `Duration` предназначены для работы с интервалами времени. `Period` используется для измерения количества лет, месяцев и дней, тогда как `Duration` измеряет количество времени в часах, минутах и секундах.
+
+#### Пример использования `Period` и `Duration`:
+
+```java
+import java.time.Period;
+import java.time.Duration;
+
+Period tenDays = Period.ofDays(10);
+System.out.println("Период в десять дней: " + tenDays);
+
+Duration threeMinutes = Duration.ofMinutes(3);
+System.out.println("Длительность в три минуты: " + threeMinutes);
+```
+
+Эти классы делают API для работы с датами и временем в Java более интуитивно понятным и удобным в использовании, обеспечив
+
+ая эффективную работу с датами, временем и их интервалами.
 
