@@ -1,0 +1,82 @@
+ Работа с товарами:
+ - передать все товары:
+
+ Request:-
+ Response:
+ [
+     {
+        "id": 1,
+        "name": "iPhone 15",
+        "description": "iPhone 15 ....",
+        "category": { "id" : 1,
+                     "categoryName": "phones"}
+        "manufacturer": {"id" : 1,
+                        "name": "Apple",
+                        "country": "China"}
+        "productPrice": 1500,
+        "productQuantity": 24
+        }
+     },
+     {}
+ ]
+
+
+ - передать список категорий
+
+  Request: -
+  Response:
+   [
+       { "id" : 1,
+         "categoryName": "phones"},
+       {}
+   ]
+
+
+        public List<CategoryDTO> getAllCategories()
+
+- передать список категорий с данными о максимальной и минимальной цене товаров в данной категории
+
+  Request: Integer categoryId
+
+
+                public List<CategoryDTO> getCategoryPrices( Integer categoryId)
+
+                Response:
+                   [
+                       {
+
+                         "categoryName": "phones",
+                         minPrice: 30,
+                         maxPrice: 4988
+                         },
+                       {}
+                   ]
+
+
+
+
+   - передать товары по категории
+   - передать товары по категории и диапазону цен
+
+
+     public List<ProductDTO> getProducts=ByCategoryAndPrice(Integer categoryId, Double minPrice, Double maxPrice)
+
+     Request: Integer categoryId, Double minPrice, Double maxPrice
+     Response:
+      [
+          {
+                  "id": 1,
+                  "name": "iPhone 15",
+                  "description": "iPhone 15 ....",
+                  "category": { "id" : 1,
+                               "categoryName": "phones"}
+                  "manufacturer": {"id" : 1,
+                                  "name": "Apple",
+                                  "country": "China"}
+                  "productPrice": 1500,
+                  "productQuantity": 24
+                  },
+          {}
+      ]
+
+
