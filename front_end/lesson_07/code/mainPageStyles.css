@@ -1,0 +1,15 @@
+.products-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.product-card{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(151, 197, 90);
+    margin-bottom: 20px;
+}
