@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "./code/eventUp",
+    "./code/eventUp/eventUp.html",
+    "./code/eventUp/eventUp.js",
+    "./code/forms",
+    "./code/forms/form.html",
+    "./code/forms/form.js",
+    "./code/index.html",
+    "./code/index.js"
+  ],
+  "video": "",
+  "etc": ""
+}
