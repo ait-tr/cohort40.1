@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/promises/hell.js",
+    "code/promises/index.html",
+    "code/promises/index.js",
+    "code/promises/pormise_example.js",
+    "code/index.html",
+    "code/index.js"
+  ],
+  "video": "",
+  "etc": ""
+}
