@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/ait-main/backend/index.js",
+    "code/ait-main/backend/myjsonfile.json",
+    "code/ait-main/backend/package-lock.json",
+    "code/ait-main/backend/package.json",
+    "code/ait-main/frontend/index.html",
+    "code/ait-main/frontend/index.js"
+  ],
+  "video": "",
+  "etc": ""
+}
