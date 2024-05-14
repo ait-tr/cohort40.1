@@ -43,6 +43,16 @@ VALUES
 ```
 
 ```sql
+SELECT
+  product.name,
+  product.price,
+  category.name
+FROM
+  product
+  JOIN category ON category.id = product.category_id;
+```
+
+```sql
 CREATE TABLE
   book (
     id serial PRIMARY KEY,
@@ -60,14 +70,4 @@ CREATE TABLE
     genre_id integer REFERENCES genre (id)
   );
 
-```
-
-```sql
-SELECT
-  product.name,
-  product.price,
-  category.name
-FROM
-  product
-  JOIN category ON category.id = product.category_id;
 ```
