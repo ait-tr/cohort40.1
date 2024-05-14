@@ -19,7 +19,6 @@ CREATE TABLE
 
 ```
 
-
 ```sql
 INSERT INTO
   category (name)
@@ -43,7 +42,6 @@ VALUES
   ;
 ```
 
-
 ```sql
 CREATE TABLE
   book (
@@ -62,4 +60,14 @@ CREATE TABLE
     genre_id integer REFERENCES genre (id)
   );
 
+```
+
+```sql
+SELECT
+  product.name,
+  product.price,
+  category.name
+FROM
+  product
+  JOIN category ON category.id = product.category_id;
 ```
