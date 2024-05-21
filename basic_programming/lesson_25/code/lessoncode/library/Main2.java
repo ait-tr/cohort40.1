@@ -1,7 +1,7 @@
 package lesson_25.code.lessoncode.library;
-import code.library.var1.UserInput;
 
-import java.util.Scanner;
+
+import lesson_06.code.lessoncode.scanner.UserInput;
 
 public class Main2 {
     private static UserInput ui = new UserInput();
@@ -21,7 +21,7 @@ public class Main2 {
             System.out.println("5. Lend Book to Reader");
             System.out.println("6. Exit");
 
-            int choice = ui.inputInt("Enter choice: ");
+            int choice = ui.inputInteger("Enter choice: ");
 
             switch (choice) {
                 case 1:
@@ -55,9 +55,9 @@ public class Main2 {
 
         String author = ui.inputText("Enter author: ");
 
-        int year = ui.inputInt("Enter year: ");
+        int year = ui.inputInteger("Enter year: ");
 
-        int pageCount = ui.inputInt("Enter page count: ");
+        int pageCount = ui.inputInteger("Enter page count: ");
 
         bookService.addBook(new Book(title, author, year, pageCount));
         System.out.println("Book added.");
@@ -78,7 +78,7 @@ public class Main2 {
 
         String name = ui.inputText("Enter reader name: ");
 
-        int id = ui.inputInt("Enter ID: ");
+        int id = ui.inputInteger("Enter ID: ");
         readerService.addReader(new Reader(name, id));
         System.out.println("Reader added.");
     }
