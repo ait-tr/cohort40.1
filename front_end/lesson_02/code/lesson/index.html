@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./flower.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <form method="get">
+
+        <!--  -->
+        <!--  -->
+
+        <h2>Базовые консольные команды гита</h2>
+        <p><strong>git clone тут_должен_буть_путь_к_удаленному_репозитарию</strong> Клонировать репозитарий</p>
+
+        <p><strong>git status</strong> посмотреть изменения</p>
+
+        <p><strong>git add .</strong> добавить изменения в индекс</p>
+        <p><strong>git commit -m 'описание коммита'</strong> закоммитить изменения (сохранить локально)</p>
+        <p><strong>git push</strong> отправить закомиченные изменения на удаленный репозитарий</p>
+
+        <p><strong>git pull</strong> подтянуть изменения из удаленного репозитария к себе на компьютер</p>
+        <br><hr><br>
+
+        <!-- Текстовое поле  с атрибутами-->
+        <input type="text" name="lastName1" value="hello" disabled>
+
+
+
+        <br>
+        <br>
+        <!-- Текстовое поле  с атрибутами 2-->
+        <input type="text" name="lastName2" required placeholder="введите имя" maxlength="5">
+        <br>
+        <br>
+        <!-- лейбл вариант 1 (обертка) -->
+        <label>
+            Введите имя
+            <input type="text" name="lastName3">
+        </label>
+        <br>
+        <br>
+
+        <!-- лейбл вариант 2 через for -->
+        <label for="lastName4">Введите имя 2</label>
+        <input type="text" name="lastName4" id="lastName4">
+
+        <br>
+        <!-- пароль, email, числа, цвет, дата -->
+        <input type="password" name="lastName5">
+        <br>
+        <br>
+        <input type="email" name="lastName6">
+        <br>
+        <br>
+        <input type="number" name="lastName6">
+        <br>
+        <br>
+        <input type="color" name="lastName6">
+        <br>
+        <br>
+        <input type="date" name="lastName6">
+
+        <br>
+        <br>
+        <!-- text area -->
+        <textarea name="info" cols="30" rows="10" maxlength="5"
+            placeholder="Введите информацию , макс длина 5 символов"></textarea>
+
+        <br>
+        <br>
+
+        <!-- select - выпадающий список -->
+        Выбирите город:
+        <select name="city" multiple>
+            <option value="Minsk">Минск</option>
+            <option value="Almaty" selected>Алматы</option>
+            <option value="Astana">Астана</option>
+        </select>
+
+        <br>
+        <br>
+        <!-- Радиокнопки -->
+        <label>
+            да
+            <input type="radio" name="yes_no" value="yes">
+        </label>
+        <label>
+            нет
+            <input type="radio" name="yes_no" value="no" checked>
+        </label>
+        <label>
+            может быть
+            <input type="radio" name="yes_no" value="maybe">
+        </label>
+
+        <br>
+        <br>
+        <!-- чекбокс -->
+        Дополнительно:
+        <br>
+        <label>
+            Завтрак
+            <input type="checkbox" name="breakfast" value="true">
+        </label>
+        <label>
+            Обед
+            <input type="checkbox" name="lunch" value="true">
+        </label>
+        <label>
+            Ужин
+            <input type="checkbox" name="diner" value="true">
+        </label>
+
+
+
+        <br>
+        <br>
+        <!-- <input type="submit"> -->
+        <input type="reset" value="Очистить">
+        <button type="submit">Отправить111</button>
+
+    </form>
+
+
+</body>
+
+</html>

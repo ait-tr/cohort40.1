@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+
+/* размер в rem */
+.div1 {
+    font-size: 0.5rem;
+}
+
+.div1 {
+    font-size: 1em;
+}
+
+/* единицы измерения % */
+.div1 {
+    background-color: yellow;
+    width: 50%;
+    font-size: 50%;
+}
+
+/* единицы измерения vh */
+.main-container {
+    /* height: 100vh; */
+    /* background-color: aquamarine; */
+}
+
+.div2 {
+    background-color: red;
+    border: 1px solid black;
+    /* изменили блочную модель на строчную в дивах */
+    display: inline;
+}
+
+.span1 {
+    border: 1px dotted black;
+    height: 100px;
+    /* изменили блочную модель сделали спан - блоком */
+    display: block;
+}
+
+.div3 {
+    background-color: red;
+    /* изменили блочную модель на блочно-строчную */
+    display: inline-block;
+    height: 40px;
+}
+
+.div4 {
+    height: 30px;
+    border: 5px solid black;
+    /* включаем в размер элемента вплоть до рамки */
+    box-sizing: border-box;
+    /* margin: 10px; */
+    /* отступы верх, право, низ, лево */
+    /* margin: 10px 10px 10px 10px; */
+    /* margin: 0 0 10px 0; */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.div5{
+    box-sizing: border-box;
+    background-color: yellow;
+    border: 1px solid red;
+    padding: 10px;
+    padding: 10px 10px 10px 10px;
+    margin:10px;
+}
+
+.div-wrapper-span{
+    text-align: center;
+}
+
+.span2{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.wrapper1{
+    border: 3px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.div6{
+    margin-top: 10px;
+    display: inline-block;
+    background-color: yellow;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    padding: 20px;
+}
+
+.div7{
+    border: 1px solid black;
+    /* height: 40px; */
+    overflow: scroll;
+}
+
+.div8{
+    background-color: yellow;
+    border: 1px solid red;
+    margin-bottom: 30px;
+}
+
+.div9{
+    margin-top: 100px;
+    background-color: gray;
+    border: 1px solid red;
+}
+
+.div10:hover{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: green;
+}
+
+.div11:first-child{
+    color: red;
+    background-color: aquamarine;
+}
+
+.div12::before{
+    color: green;
+    height: 10px;
+    content: "";
+    display: block;
+    background-color: black;
+}

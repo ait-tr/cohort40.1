@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 5px solid black;
+            /* height: 400px; */
+            height: 100vh;
+            display: flex;
+
+            justify-content: space-between;
+
+            /* gap: 50px; */
+
+            /* display: inline-flex; */
+
+            /* напарвление главной оси */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* значение по умолчанию направление основной оси флекса  */
+            /* flex-direction: row; */
+
+            /* перенос элементов на новую строку */
+            /* flex-wrap:  wrap; */
+            /* flex-wrap:  wrap-reverse; */
+
+            /* Выравнивание вдоль основной оси (по горизонтали)  */
+
+            /* прижать все к началу */
+            /* justify-content: flex-start; */
+
+            /* прижать к концу (право) */
+            /* justify-content: flex-end; */
+
+            /* задать одиноковые расстояния межу флекс айтами (но между родителем не задать) */
+            /* justify-content: space-between; */
+
+            /* однинак расстояния между айтемами, и отталкивайся от стенок родителя (по горизонтали) */
+            /* justify-content: space-around; */
+
+            /* тоже самое что и  space-around - только все расстояния между айтамами и родителем - одинаковые (по горизонтали)*/
+            /* justify-content: space-evenly; */
+
+            /* выравнивание по линии шрифта */
+            /* justify-content: baseline; */
+
+            /* выравнять по центру */
+            /* justify-content: center; */
+            /* ------------------------- */
+
+            /* Выравнивание вдоль поперечной оси (сверху вниз) */
+
+            /* по центу (вертикально) */
+            /* align-items: center; */
+
+            /* прижать все к низу (по умолчанию) */
+            /* align-items: flex-end; */
+
+            /* прижать все к верху (по умолчанию) */
+            /* align-items: flex-start; */
+
+            /* align-items: baseline; */
+
+            /* ---------------------------- */
+
+            /* выравнять группу элементов по центру ( работает только с flex-wrap: wrap; ) */
+            /* align-content: center; */
+            /* flex-wrap: wrap; */
+
+            /* прижать группу к низу */
+            /* align-content: end; */
+
+            /* прижать группу к верху */
+            /* align-content: flex-start; */
+
+            /* выровнять группу на одинак расстояние друг от друга  */
+            /* align-content: space-between; */
+
+            /* выровнять группу блоков с одинак расстояним между друг дургом */
+            /* align-content: space-evenly; */
+        }
+
+        .item {
+            height: 300px;
+            /* width: 50%; */
+            /* width: 50%; */
+            /* margin-left: 10px; */
+            font-size: 40px;
+            /* margin-left: 30px; */
+
+        }
+
+        .item1 {
+            background-color: yellow;
+        }
+
+        .item2 {
+            background-color: blue;
+        }
+
+        .item3 {
+            background-color: green;
+        }
+
+        .item4 {
+            background-color: blueviolet;
+        }
+
+
+
+        /* пример медиазапроса для адаптивной верстки (если размер экрана меньше 1000px примени стили такие-то */
+        /* @media screen and (max-width: 1000px) {
+            .container {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .item {
+                width: 100%;
+            }
+        } */
+
+        /* Стили для айтемов */
+
+        .item1 {
+            /* flex-grow: 1; */
+            flex-grow: 1;
+        }
+
+        .item2 {
+            /* указывает относительный размер айтема относительно других */
+            /* flex-grow: 1; */
+
+            /* базовая ширина - тоже самое что и width */
+            /* flex-basis: 100px; */
+            /* width: 100px; */
+
+            /* сокращенная запись  flex-grou, flex-shring, flex-basis */
+            flex: 1 0 300px;
+        }
+
+        .item3 {
+            /* на сколько может ужаться элемент относительно других */
+            flex-shrink: 2; 
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <!-- <div class="item item4">4</div> -->
+
+    </div>
+</body>
+
+</html>

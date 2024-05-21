@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/fetch/index.html",
+    "code/fetch/index.js",
+    "code/fetch/test.json",
+    "code/index.html",
+    "code/index.js"
+  ],
+  "video": "",
+  "etc": ""
+}
