@@ -1,7 +1,5 @@
 package consultation.cons_05.consultationCode.code.bookStore;
 
-import java.util.Arrays;
-
 public class BookStorage {
 
     private String line;
@@ -22,11 +20,12 @@ public class BookStorage {
         return bookShelves;
     }
 
-    @Override
-    public String toString() {
+    @java.lang.Override
+    public java.lang.String toString() {
         return "BookStorage{" +
-                "line='" + line + '\'' +
-                ", bookShelves=" + Arrays.toString(bookShelves) +
+                "line=" + line +
+                ", numberOfShelves=" + numberOfShelves +
+                ", bookShelves=" + java.util.Arrays.toString(bookShelves) +
                 '}';
     }
 }

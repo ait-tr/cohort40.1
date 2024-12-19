@@ -1,6 +1,6 @@
 package consultation.cons_03.consultationCode.code;
 
-public class Phone {
+public class    Phone {
 
     String model;
 

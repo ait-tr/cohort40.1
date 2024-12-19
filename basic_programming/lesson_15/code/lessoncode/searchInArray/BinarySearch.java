@@ -95,7 +95,7 @@ public class BinarySearch {
 
         SearchInArray search = new SearchInArray();
 
-        int indexSearch = search.linearSearch(arrayForSearch,elementForSearch);
+        int indexSearch = search.binarySearch(arrayForSearch,elementForSearch);
 
         if (indexSearch >= 0) {
             System.out.println("Search element " + elementForSearch + " have index " + indexSearch);
